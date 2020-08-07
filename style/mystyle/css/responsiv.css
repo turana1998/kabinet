@@ -374,6 +374,12 @@
 }
 
 @media (min-width: 768px) {
+    .treknomre{
+        width: 20%;
+    }
+    .status{
+        width: 16%;
+    }
     #erazi,#telefon{
         width: 80% !important;
     }
