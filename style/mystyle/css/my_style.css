@@ -1,14 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face {
-    font-family: 'Kanit';
-    src: url(../fonts/Kanit/Kanit-SemiBold.ttf);
+    font-family: Kanit;
+    src: url(../fonts/Kanit/Kanit-Regular.ttf);
+}
+*{
+    font-family: Kanit;
+}
+@font-face {
+    font-family: Kanit-bold;
+    src: url(../fonts/Kanit/Kanit-Bold.ttf);
+
 }
 
+@font-face {
+    font-family: Kanit-medium;
+    src: url(../fonts/Kanit/Kanit-Medium.ttf);
+}
 
 @font-face {
-    font-family: 'Kanittt';
+    font-family: Kanit-2;
     src: url(../fonts/Kanit/Kanit-Light.ttf);
+}
+
+@font-face {
+    font-family: Kanit-semibold;
+    src: url(../fonts/Kanit/Kanit-SemiBold.ttf);
 }
 
 @media (min-width: 768px) {
@@ -29,7 +46,7 @@
 
     .scrollll table td,
     .scrollll table th {
-        padding: .75rem !important;
+        padding: .75rem 0 !important;
     }
 
 
@@ -51,7 +68,14 @@
 .tablescrool table th {
     padding: 5px !important;
 }
-
+.table td {
+    vertical-align: middle !important;
+}
+.custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: middle !important;
+}
 #KuryerTable th {
     font-family: Kanit;
     font-style: normal;
@@ -488,6 +512,9 @@ hr {
     display: flex;
     align-items: center;
 }
+.trayektoriyaa .custom-control-label::before{
+    top: -0.75rem;
+}
 
 /* 
 span {
@@ -498,7 +525,8 @@ span {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 200px;
+    width: 174px;
+    height: 48px;
     font-size: 20px;
     border: 2px solid #747D8C;
     box-sizing: border-box;
@@ -506,9 +534,12 @@ span {
 }
 
 .users li a {
-    font-size: 13px !important
+    font-size: 16px !important
 }
-
+.users li a:hover{
+    color: #57606F;
+    font-weight: bold;
+}
 .users div {}
 
 .form-row {
@@ -1195,7 +1226,7 @@ table::-webkit-scrollbar-thumb:hover {
 }
 
 .table_balans {
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 40px;
     height: 400px;
 }
@@ -1405,7 +1436,7 @@ table::-webkit-scrollbar-thumb:hover {
     font-family: Kanit !important;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 21px;
     letter-spacing: 0.2px;
 
@@ -1503,7 +1534,7 @@ table::-webkit-scrollbar-thumb:hover {
     font-family: Kanit !important;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 19px;
     align-items: center;
     text-align: center;
@@ -1722,7 +1753,7 @@ table::-webkit-scrollbar-thumb:hover {
     /* Color */
     outline: none;
     border: 1px solid #F16136;
-    box-sizing: border-box;
+box-sizing: border-box;
     border-radius: 4px;
 
     font-family: Kanit !important;
@@ -1743,7 +1774,7 @@ table::-webkit-scrollbar-thumb:hover {
     height: 48px;
     /* Color */
     outline: none;
-    border: 1px solid #F16136;
+    border: 1px solid #57606F;
     box-sizing: border-box;
     background-color: transparent;
     border-radius: 4px;
@@ -1758,15 +1789,13 @@ table::-webkit-scrollbar-thumb:hover {
 
     /* Color */
 
-    color: #F16136;
+    color: #57606F;
 }
 
-#referaluzre:hover,
-#referaluzre2:hover {
-    background-color: #F16136;
-    color: #FFFFFF;
+.table th{
+    border-top: none !important;
+    border-bottom: none !important;
 }
-
 .balans_title {
     width: 400px;
     height: 16px;
@@ -1784,6 +1813,7 @@ table::-webkit-scrollbar-thumb:hover {
 }
 
 .balansdaxilet {
+    width: 85%;
     margin-top: 20px;
     border-bottom: 1px solid #C4C4C4;
 }
@@ -1928,13 +1958,16 @@ table::-webkit-scrollbar-thumb:hover {
 
     color: #F16136;
 }
-
+.kuryer_form .row .input-field input{
+    border-radius: 0% !important;
+}
 .bglmscn_label {
     font-family: Kanit !important;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
+    padding-top: 1px;
     letter-spacing: 0.2px;
 
     /* Main color */
@@ -2008,7 +2041,9 @@ table::-webkit-scrollbar-thumb:hover {
     padding: 20px;
 
 }
-
+.info_baglama_header{
+    height: 40px !important;
+}
 .sifarisetinforpink p {
 
     margin: 10px 0 10px 38px;
@@ -2076,7 +2111,7 @@ table::-webkit-scrollbar-thumb:hover {
     font-weight: normal;
     font-size: 22px;
     line-height: 24px;
-    margin-top: 10px;
+    margin-top: 7px;
     letter-spacing: 0.2px;
 
     /* Color */
@@ -2123,7 +2158,9 @@ table::-webkit-scrollbar-thumb:hover {
 
     color: #FFFFFF;
 }
-
+/* .formsifariset button:hover{
+     background: #20BF6B;
+} */
 .toplam_qiymet {
     width: 200px !important;
     height: 40px;
@@ -2413,7 +2450,7 @@ table::-webkit-scrollbar-thumb:hover {
     height: 16px;
     border: 2px solid #555D69;
     box-sizing: border-box;
-    top: 0;
+   
 }
 
 .custom-radio .custom-control-label::before {
@@ -2422,7 +2459,7 @@ table::-webkit-scrollbar-thumb:hover {
     height: 24px;
     border: 2px solid #555D69;
     box-sizing: border-box;
-    top: 0;
+    
 }
 
 .order-list .custom-radio .custom-control-label::before {
@@ -2630,7 +2667,9 @@ table tbody tr {
     border-radius: 5px;
     color: #FFFFFF !important;
 }
-
+thead{
+    border-radius: 8px 8px 0px 0px;
+}
 .modal-header {
     padding: 0;
 }
@@ -2641,7 +2680,9 @@ table tbody tr {
 }
 
 .modal-header .close {
-    margin: auto 16px;
+    margin-right: 16px;
+    margin-top: 5px;
+
     /* margin-left: 20px; */
     padding: 0;
 

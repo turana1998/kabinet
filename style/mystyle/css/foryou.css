@@ -48,6 +48,7 @@
 }
 
 .user_dropdown-menu {
+    left: 7%;
     width: 191px !important;
     height: 78px !important;
     margin-top: 10px;
@@ -261,8 +262,8 @@
 
 .sifaris_redakte {
 
-    width: 850px;
-    height: 395px;
+    width: 750px;
+    
 
 
     /* White*/
@@ -286,13 +287,11 @@
 }
 
 .sifaris_redakte_modal {
-    width: 837px;
-    overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .sifaris_redakte_header {
-    width: 818px;
+    width: 718px;
     height: 46px;
     margin: 10px;
     /* Color */
@@ -395,6 +394,7 @@
     font-size: 16px;
     line-height: 24px;
     display: flex;
+    margin-top: .7rem;
     align-items: center;
     text-align: center;
     letter-spacing: 0.2px;

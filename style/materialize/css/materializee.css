@@ -225,6 +225,7 @@ textarea.materialize-textarea {
   /* Color */
 
   border: 1px solid #F16136;
+  border-radius: 4px;
   box-sizing: border-box;
   outline: none;
   height: 3rem;
@@ -346,7 +347,8 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
   top: 7px;
   background-color: white;
-  width: auto;
+  width:auto;
+  padding: 0 10px;
 }
 
 input:not([type]):focus.valid~label,

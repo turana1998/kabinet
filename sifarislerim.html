@@ -297,9 +297,8 @@
                                     1.79 $</td>
                                 <td data-column="Bəyannamə"><button class="baglama_notokey">Ödə</button>
                                 </td>
-                                <td><img data-toggle="modal" data-target="#sifaris_cedvel"
-                                        src="style/mystyle/img/kuryereye.png">&nbsp<i data-toggle="modal"
-                                        data-target="#sifaris_redakte" class="fas fa-pen"></i>&nbsp<i
+                                <td><img data-toggle="modal" data-target="#sifaris_baxis"
+                                        src="style/mystyle/img/kuryereye.png">&nbsp<i data-toggle="modal" data-target="#sifaris_cedvel" class="fas fa-pen"></i>&nbsp<i
                                         class="fas fa-trash-alt"></i></td>
 
                             </tr>
@@ -315,9 +314,8 @@
                                     1.79 $</td>
                                 <td data-column="Bəyannamə"><button class="baglama_notokey">Ödə</button>
                                 </td>
-                                <td><img data-toggle="modal" data-target="#sifaris_cedvel"
-                                        src="style/mystyle/img/kuryereye.png">&nbsp<i data-toggle="modal"
-                                        data-target="#sifaris_redakte" class="fas fa-pen"></i>&nbsp<i
+                                <td><img 
+                                        src="style/mystyle/img/kuryereye.png">&nbsp<i data-toggle="modal" data-target="#sifaris_cedvel" class="fas fa-pen"></i>&nbsp<i
                                         class="fas fa-trash-alt"></i></td>
 
                             </tr>
@@ -776,6 +774,80 @@
         </div>
         
     </div>
+    <div class="modal fade" id="sifaris_baxis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content sifaris_redakte">
+                <div class="modal-header sifaris_redakte_header">
+                    <h5 class="modal-title" id="exampleModalLabel">ŞİFARİŞ MƏLUMATLARININ
+                        DƏYİŞDİRİLMƏSİ<span>#36998</span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="style/mystyle/img/modal-none.png" style="color: #FFFFFF;">
+                    </button>
+                </div>
+                <div class="modal-body sifaris_redakte_modal">
+                    <div class="modal-body  sifaris_redakte_modal">
+                        <table class="table fixed_header" style="width: 95%;">
+
+                            <thead>
+                                <tr class="table_head">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Məhsul linki</th>
+                                    <th scope="col">Qiymət</th>
+                                    <th scope="col">Say</th>
+                                    <th scope="col">Əlavə qeyd</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody_table">
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td><button class="sifaris_modal_tbl_btn">Link</button></td>
+                                    <td>5 TL</td>
+                                    <td>4</td>
+                                    <td>Əlavə qeyd</td>
+                                    <td>Sifariş edilmişdir</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2</td>
+                                    <td><button class="sifaris_modal_tbl_btn">Link</button></td>
+                                    <td>5 TL</td>
+                                    <td>4</td>
+                                    <td>Əlavə qeyd</td>
+                                    <td>Gözləmədə</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">3</td>
+                                    <td><button class="sifaris_modal_tbl_btn">Link</button></td>
+                                    <td>5 TL</td>
+                                    <td>4</td>
+                                    <td>Əlavə qeyd</td>
+                                    <td>Sifariş edilmişdir</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">4</td>
+                                    <td><button class="sifaris_modal_tbl_btn">Link</button></td>
+                                    <td>5 TL</td>
+                                    <td>4</td>
+                                    <td>Əlavə qeyd</td>
+                                    <td>Sifariş edilmişdir</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td><button class="sifaris_modal_tbl_btn">Link</button></td>
+                                    <td>5 TL</td>
+                                    <td>4</td>
+                                    <td>Əlavə qeyd</td>
+                                    <td>Sifariş edilmişdir</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="sifaris_cedvel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -801,7 +873,7 @@
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="tbody_table">
                                 <tr>
                                     <td scope="row">1</td>
                                     <td><button class="sifaris_modal_tbl_btn">Link</button></td>
@@ -870,18 +942,18 @@
                                 placeholder="https://www.trendyol.com/pierre-cardin/erkek-t-shirt-g021gl011-000-977812-p-37213498?boutiqueId=512">
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-md-2 col-5">
-                                <input type="text" class="form-control" id="olcu" placeholder="M"> </div>
-                            <div class="form-group col-md-4 col-7">
-                                <input type="text" class="form-control" id="reng" placeholder="Sarı">
+                            <div class="form-group col-md-2 col-3">
+                                <input type="text" class="form-control" id="olcu" value="M"> </div>
+                            <div class="form-group col-md-4 col-3">
+                                <input type="text" class="form-control" id="reng" value="Sarı">
                             </div>
-                            <div class="form-group col-md-1 col-3">
-                                <input type="number" class="form-control" id="Say" placeholder="1">
+                            <div class="form-group col-md-1 col-2">
+                                <input type="number" class="form-control" id="Say" value="1">
                             </div>
-                            <div class="form-group col-md-2 col-4">
-                                <input type="text" class="form-control" id="qiymet" placeholder="90 TL">
+                            <div class="form-group col-md-2 col-2">
+                                <input type="text" class="form-control" id="qiymet" value="90">
                             </div>
-                            <div class="form-group col-md-2 col-5">
+                            <div class="form-group col-md-2 col-2">
                                 <p>+0% = 0</p>
                             </div>
                         </div>

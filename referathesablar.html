@@ -291,7 +291,7 @@
                         </label><img class="ml-3" src="style/mystyle/img/radiobnt4.png"><span>Təhvil verilib
                             (1)</span></div>
                 </div>
-                <div class="row" id="trayektoriya">
+                <div class="row" id="trayektoriya" style="display: none;">
                     <div class="trayektoriyaa p-0">
                         <div class=" d-flex flex-row w-100 mobile-hide"
                             style="margin-top:20px;justify-content: center;">
@@ -397,7 +397,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="table_siyahi" style="display: none;">
+                <div id="table_siyahi">
                     <table class="table table-hover">
                         <thead style="
                         height: 44px;                            
@@ -491,7 +491,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="table_sifaris" style="padding-left: 15px;">
+                <div id="table_sifaris" style="padding-left: 15px;display: none;">
 
                     <div class="d-flex mt-3 order-list">
                         <div class="ml-5 list-main"> <input class="d-none" type="radio" name=""> <i
@@ -959,10 +959,10 @@
             document.getElementById("table_siyahi").style.display = "block";
             document.getElementById("table_sifaris").style.display = "none";
             document.getElementById("trayektoriya").style.display = "none";
-            document.getElementById("referaluzre").style.backgroundColor = "#F16136";
-            document.getElementById("referaluzre").style.color = "#ffffff"
-            document.getElementById("referaluzre2").style.backgroundColor = "#ffffff";
-            document.getElementById("referaluzre2").style.color = "#F16136"
+            document.getElementById("referaluzre").style.borderColor = "#F16136";
+            document.getElementById("referaluzre").style.color = "#F16136"
+            document.getElementById("referaluzre2").style.borderColor= "#57606F";
+            document.getElementById("referaluzre2").style.color = "#57606F"
 
 
 
@@ -973,10 +973,10 @@
             document.getElementById("table_siyahi").style.display = "none";
             document.getElementById("table_sifaris").style.display = "block";
             document.getElementById("trayektoriya").style.display = "flex";
-            document.getElementById("referaluzre2").style.backgroundColor = "#F16136";
-            document.getElementById("referaluzre2").style.color = "#ffffff"
-            document.getElementById("referaluzre").style.backgroundColor = "#ffffff";
-            document.getElementById("referaluzre").style.color = "#F16136"
+            document.getElementById("referaluzre2").style.borderColor= "#F16136";
+            document.getElementById("referaluzre2").style.color = "#F16136"
+            document.getElementById("referaluzre").style.borderColor = "#57606F";
+            document.getElementById("referaluzre").style.color = "#57606F"
 
 
 

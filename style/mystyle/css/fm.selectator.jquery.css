@@ -109,10 +109,12 @@
 }
 .selectator_selected_items .selectator_selected_item .selectator_selected_item_left {
   float: left;
+  margin-right: 10px;
 }
 .single .selectator_selected_items .selectator_selected_item .selectator_selected_item_left {
   float: left;
   width: 30px;
+  margin-right: 10px;
   margin-top: -2px;
 }
 .single .selectator_selected_items .selectator_selected_item .selectator_selected_item_left img {
