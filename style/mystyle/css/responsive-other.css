@@ -46,10 +46,13 @@
 }
 
 @media screen and (max-width: 768px) {
+    /* #mobile-sifaris{
+        display: none;
+    } */
     .tables-mobile {
-        display: block !important;
+        display: block;
     }
-
+   
     .xariciunvan_title {
         font-size: 25px;
     }

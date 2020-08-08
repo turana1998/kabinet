@@ -110,7 +110,7 @@
 }
 
 #table_siyahi .table thead th {
-    border-bottom: 2px solid #555D69;
+    border-bottom: 2px solid #555D69 !important;
 
 }
 

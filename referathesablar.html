@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./style/mystyle/css/style-other.css">
     <link rel="stylesheet" href="./style/mystyle/css/foryou.css">
     <link rel="stylesheet" href="https://use.typekit.net/dfw0poo.css">
-    <link rel="stylesheet" type="text/css" href="./style/mystyle/css/table-respons.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
@@ -651,7 +650,7 @@
                 </div>
             </div>
 
-            <div class="col-12 tables-mobile my-4">
+            <div class="col-12 tables-mobile my-4 d-none" id="mobile-sifaris">
                 <div class="row tables-mobile-container">
                     <div class="col-6 table-mobile-first">
                         <p>ID</p>
@@ -958,6 +957,7 @@
         function ReferalSiyahi() {
             document.getElementById("table_siyahi").style.display = "block";
             document.getElementById("table_sifaris").style.display = "none";
+            document.getElementById("mobile-sifaris").style.display = "none";
             document.getElementById("trayektoriya").style.display = "none";
             document.getElementById("referaluzre").style.borderColor = "#F16136";
             document.getElementById("referaluzre").style.color = "#F16136"
@@ -972,6 +972,7 @@
         function ReferalSifaris() {
             document.getElementById("table_siyahi").style.display = "none";
             document.getElementById("table_sifaris").style.display = "block";
+            document.getElementById("mobile-sifaris").style.display = "block";
             document.getElementById("trayektoriya").style.display = "flex";
             document.getElementById("referaluzre2").style.borderColor= "#F16136";
             document.getElementById("referaluzre2").style.color = "#F16136"
