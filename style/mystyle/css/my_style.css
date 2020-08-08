@@ -52,8 +52,39 @@
 
 }
 
-
-
+input[type=radio] {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+ }
+     .file-input input{
+         border: 1px solid #E7ECF2;
+        box-sizing: border-box;
+     }
+     .file-input > [type='file'] {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   z-index: 10;
+   cursor: pointer;
+ }
+ .file-input > .button {
+     display: inline-block;
+     cursor: pointer;
+     background: #eee;
+     padding: 3px 5px;
+     font-family: Kanit;
+     border-radius: 2px;
+     margin: 8px;
+ 
+ }
+.file-input{
+    border: 1px solid #E7ECF2;
+    
+}
 .scrollll {
     height: 550px !important;
 }
@@ -89,7 +120,10 @@
 
     color: #57606F;
 }
-
+.info_baglama .modal-header{
+    border-bottom: 1px solid #E7ECF2 !important;
+    height: 40px !important;
+}
 .table_baglama table th {
     font-family: Kanit;
     font-style: normal;
@@ -118,6 +152,25 @@
     border-bottom: 2px solid #555D69;
 
 }
+.cixis_qeydiyat {
+    position: absolute;
+    width: 4px;
+    height: 48px;
+    left: 0%;
+    padding: 0;
+    border: none;
+    outline: none;
+    top: -6%;
+
+    /* footer */
+
+    background: #ffffff;
+}
+.qeydiyyat_modal .modal-header img{
+    position: absolute;
+    left: 4%;
+    top: 11%;
+}
 
 .table_baglama table span {
     font-family: Kanit;
@@ -132,7 +185,32 @@
 
     color: #57606F;
 }
+.form_qeydiyyat input,.form_qeydiyyat select{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    /* color: #FFFFFF; */
+    color: #8F9F97;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+.ferqlii{
+color: #FFFFFF !important;
+}
 
+.social-networks_list--facebook a img:hover{
+    content: url(../img/fb-hover.png);
+}
+.social-networks_list--instagram a img:hover{
+    content: url(../img/insta-hover.png);
+}
+.social-networks_list--youtube a img:hover{
+    content: url(../img/youtube-hover.png);
+}
 .olke_select_img {
     display: none;
 }
@@ -1436,7 +1514,7 @@ table::-webkit-scrollbar-thumb:hover {
     font-family: Kanit !important;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.2px;
 
@@ -1534,7 +1612,7 @@ table::-webkit-scrollbar-thumb:hover {
     font-family: Kanit !important;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 19px;
     align-items: center;
     text-align: center;
@@ -1793,8 +1871,8 @@ box-sizing: border-box;
 }
 
 .table th{
-    border-top: none !important;
-    border-bottom: none !important;
+    border-top: none ;
+    border-bottom: none;
 }
 .balans_title {
     width: 400px;
@@ -2041,9 +2119,7 @@ box-sizing: border-box;
     padding: 20px;
 
 }
-.info_baglama_header{
-    height: 40px !important;
-}
+
 .sifarisetinforpink p {
 
     margin: 10px 0 10px 38px;
@@ -2285,10 +2361,8 @@ box-sizing: border-box;
 
 .qeydiyyat_title {
     display: block;
-    margin: auto;
     margin-right: 20px;
     margin-bottom: 20px;
-    width: 164px;
     height: 22px;
     font-family: Kanit;
     font-style: normal;
@@ -2543,16 +2617,63 @@ table tbody tr {
     width: 97%;
     table-layout: fixed;
 }
+.checkmark {
+    position: absolute;
+top: 0;
+left: 0;
+height: 24px;
+width: 24px;
+background-color: #FFFFFF;
+/* border: 1px solid yellow; */
+border: 2px solid #555D69;
+border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerr:hover input ~ .checkmark {
+background-color: #FFFFFF;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerr input:checked ~ .checkmark {
+background-color: white;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerr input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerr .checkmark:after {
+top: 2px;
+left: 2px;
+width: 16px;
+height: 16px;
+border-radius: 50%;
+background: #F16136;
+}
+
 
 .nav-item-drop:hover>.hover-item {
     background-image: url(../img/dropbg.png);
     color: #ffffff !important;
     /* position: absolute; */
     background-repeat: no-repeat;
-    padding-top: 18px;
+    font-size: 16px;
     height: 62px;
 }
-
+.activeee{
+    border-bottom: 1px solid #F16136 !important;
+    }
+    
 .hover-item:hover:focus+.dropdown-menu {
     display: block;
 

@@ -21,36 +21,6 @@
 </head>
 <style>
     
-   input[type=radio] {
-   width: 24px;
-   height: 24px;
-   margin-top: 0;
-}
-    input[type="radio" i]:focus {
-   background-color: rebeccapurple !important;
-}
-    .file-input input{
-        border: 1px solid #E7ECF2;
-       box-sizing: border-box;
-    }
-    .file-input > [type='file'] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 10;
-  cursor: pointer;
-}
-.file-input > .button {
-  display: inline-block;
-  cursor: pointer;
-  background: #eee;
-  padding: 8px 16px;
-  border-radius: 2px;
-  margin-right: 8px;
-}
 .col-form-label{
     padding-bottom: 0 !important;
 }
@@ -330,15 +300,22 @@
 
                             </div> -->
                             
-                            <div class="form-check top_radio custom-control custom-radio" style="    top: 24px;
+                            <div class=" custom-control custom-radio top_radio " style="top: 24px;
                             left: 9%;">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                <label class="form-check-label custom-control custom-radio" for="exampleRadios2">
+                              <label class="containerr">
+                                <input type="radio" name="radio" style="position: absolute;
+                                opacity: 0;
+                                cursor: pointer;">
+                                <span class="checkmark"></span>
+                              </label>
+                                <!-- <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label custom-control custom-radio" for="exampleRadios2"> -->
                                  
                                 </label>
                               </div>
+                           
                             <div class="mr-5 list-main"> <input class="d-none" type="radio" name="">
-                                <div style="margin-bottom: 7px;"><img src="style/mystyle/img/radiobnt5.png"
+                                <div style="margin-bottom: 7px"><img src="style/mystyle/img/radiobnt5.png"
                                         class="mr-2"><span>Gonderilib
                                         (1)</span></div>
                             </div>
@@ -348,10 +325,12 @@
                                 <div class="button-line">
                                     <div class="first_radio d-flex flex-column">
                                         <div class="custom-control custom-radio ">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
-                                            <label class="form-check-label" for="exampleRadios3">
-
-                                            </label>
+                                            <label class="containerr">
+                                                <input type="radio" name="radio" style="position: absolute;
+                                                opacity: 0;
+                                                cursor: pointer;">
+                                                <span class="checkmark"></span>
+                                              </label>
                                             <hr class="radiobtn_hr ">
                                         </div>
                                         <div class=""> <input class="d-none" type="radio" name="">
@@ -366,10 +345,12 @@
                                 <div class="button-line mobile-hide">
                                     <div class="first_radio d-flex flex-column">
                                         <div class="custom-control custom-radio ">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
-                                <label class="form-check-label" for="exampleRadios4">
-
-                                            </label>
+                                            <label class="containerr">
+                                                <input type="radio" name="radio" style="position: absolute;
+                                                opacity: 0;
+                                                cursor: pointer;">
+                                                <span class="checkmark"></span>
+                                              </label>
                                             <!-- <hr class="radiobtn_hr"> -->
                                         </div>
                                         <div class="" style="margin-left: -84px;"> <input class="d-none" type="radio"
@@ -391,10 +372,12 @@
                                 <div class="" style="margin-left: -6px;">
                                     <div class="first_radio d-flex flex-column">
                                         <div class="custom-control custom-radio ">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option2">
-                                            <label class="form-check-label" for="exampleRadios5">
-
-                                            </label>
+                                            <label class="containerr">
+                                                <input type="radio" name="radio" style="position: absolute;
+                                                opacity: 0;
+                                                cursor: pointer;">
+                                                <span class="checkmark"></span>
+                                              </label>
                                             <hr class="radiobtn_hr mobile-hide">
                                         </div>
                                         <div class=""> <input class="d-none" type="radio" name="">
@@ -409,10 +392,12 @@
                                 <div class="">
                                     <div class=" first_radio d-flex flex-column">
                                         <div class="custom-control custom-radio ">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option2">
-                                <label class="form-check-label" for="exampleRadios6">
-
-                                            </label>
+                                            <label class="containerr">
+                                                <input type="radio" name="radio" style="position: absolute;
+                                                opacity: 0;
+                                                cursor: pointer;">
+                                                <span class="checkmark"></span>
+                                              </label>
 
                                         </div>
                                         <div class="" style="margin-left: -75px;"> <input class=" d-none" type="radio"
@@ -440,7 +425,7 @@
                                             <label class="custom-control-label" for="customCheck1">Reys</label>
                                         </div>
                                     </th>
-                                    <th class="treknomre" scope="col" style="text-align:center;">Trek Nömrə<br><span>Mağaza /
+                                    <th class="treknomre" scope="col" style="text-align:center;">Trek nömrə<br><span>Mağaza /
                                             İnvoys
                                             qiyməti</span></th>
                                     <th scope="col" style="text-align:center">Çəkisi<br><span>Çatdırılma haqqı</span>
@@ -455,8 +440,8 @@
                                 <tr>
                                     <td data-column="Reys" scope="row">
                                         <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">Baki-0623</label>
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Baki-0623</label>
                                         </div>
                                     </td>
                                     <td  class="treknomre"  data-column="Trek Nömrə  Mağaza / İnvoys
@@ -1208,7 +1193,7 @@
                                     <label for="recipient-name" class="col-form-label">İnvoys fayl:</label>
                                     <div class="input-group mb-3">
 
-                                        <div class='file-input'>
+                                        <div class='file-input w-100'>
                                             <input type='file'>
                                             <span class='button'>Choose File</span>
                                             
@@ -1229,16 +1214,16 @@
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered d-flex" role="document">
             <div class="modal-content qeydiyyat_modal">
-                <div class="modal-header" style="justify-content: center !important;">
+                <div class="modal-header" style="justify-content: center !important;margin-top: 6%;">
                     <h5 class="qeydiyyat_title">Tənzimləmələr</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span style="color: white;" aria-hidden="true">&times;</span>
-                    </button>
+                    <img  data-toggle="modal" data-dismiss="modal" src="style/mystyle/img/back-white.png">
+
                 </div>
                 <div class="modal-body">
                     <form class="d-flex form_qeydiyyat ">
                         <div class="row">
                             <div class="d-flex qeydiyt">
+                                <button class="cixis_qeydiyat" data-toggle="modal" data-dismiss="modal"></button>
                                 <div class="form-group  col-3">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Ad</label>
                                     <input type="text" class="form-control qeydiyat_input" id="recipient-name"
@@ -1259,9 +1244,11 @@
                                     <div class="d-flex" style="justify-content: space-between;">
                                         <label for="message-text" class="col-form-label  qeydiyat_label">Doğum
                                             tarixi</label> <img src="style/mystyle/img/teqvim.png"
-                                            style="width: 20px; height: 20px;">
+                                            style="width: 20px; height: 20px;    position: absolute;
+                                            left: 80%;
+                                            top: 50%;">
                                     </div>
-                                    <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    <input type="text" class="form-control qeydiyat_input ferqlii" id="recipient-name"
                                         value="15.05.1990" disabled>
 
 
@@ -1284,7 +1271,7 @@
                                 </div>
                                 <div class="form-group col-3">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Dil Seçimi</label>
-                                    <select type="text" class="form-control qeydiyat_input" id="recipient-name">
+                                    <select type="text" class="form-control qeydiyat_input ferqlii" id="recipient-name">
                                         <option selected>Azərbaycan dili</option>
                                         <option>AZ</option>
                                         <option>EN</option>
@@ -1329,7 +1316,7 @@
                                 </div>
                                 <div class="form-group col-6">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Cinsiyyət</label>
-                                    <select type="text" class="form-control qeydiyat_input_col6 selectt"
+                                    <select type="text" class="form-control qeydiyat_input_col6 selectt ferqlii"
                                         id="recipient-name">
                                         <option selected>Kişi</option>
                                         <option>Xanim</option>
@@ -1341,15 +1328,20 @@
                                 <div class="form-group col-6">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Referral customer
                                         code</label>
-                                    <input type="text" class="form-control qeydiyat_input_col6" id="recipient-name"
+                                    <input type="text" class="form-control qeydiyat_input_col6 ferqlii" id="recipient-name"
                                         value="6CLBREXPRSS">
                                 </div>
                                 <div class="form-group col-6">
                                     <div class="d-flex " style="justify-content: space-between;">
                                         <label for="message-text" class="col-form-label  qeydiyat_label">Şifrə</label>
-                                        <img src="style/mystyle/img/unvisible.png" style="width: 20px; height: 20px;">
+                                        <img src="style/mystyle/img/unvisible.png" style="    width: 16px;
+                                        height: 14px;
+                                        position: absolute;
+                                        left: 90%;
+                                        top: 50%;
+                                    ">
                                     </div>
-                                    <input type="password" class="form-control qeydiyat_input_col6" id="recipient-name"
+                                    <input type="password" class="form-control qeydiyat_input_col6 ferqlii" id="recipient-name"
                                         value="12345">
 
                                 </div>

@@ -223,8 +223,7 @@
     background: #FFFFFF;
     /* Shadow */
 
-    box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
-    border-radius: 8px;
+    
 }
 
 .info_baglamala_modal .form-group {
@@ -262,7 +261,7 @@
 
 .sifaris_redakte {
 
-    width: 750px;
+    width: 850px;
     
 
 
@@ -280,7 +279,7 @@
 }
 
 .sifaris_redakte .table_head {
-    width: 750px;
+    width: 850px;
     height: 44px;
     background: #EAEAEA;
     border-radius: 8px 8px 0px 0px;
@@ -291,7 +290,7 @@
 }
 
 .sifaris_redakte_header {
-    width: 718px;
+    width: 818px;
     height: 46px;
     margin: 10px;
     /* Color */
