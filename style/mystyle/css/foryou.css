@@ -212,7 +212,9 @@
     box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
     border-radius: 8px;
 }
-
+.sifaris_redakte table td ,.sifaris_redakte table th{
+    padding: .3rem !important;
+}
 .info_baglamala_modal {
 
     width: 635px;
@@ -287,7 +289,11 @@
 
 .sifaris_redakte_modal {
     overflow-x: hidden;
+    height: 310px;
+    overflow-y: hidden;
+    margin-bottom: 20px;
 }
+
 
 .sifaris_redakte_header {
     width: 818px;
@@ -341,12 +347,63 @@
     line-height: 27px;
     text-align: center;
     letter-spacing: 0.2px;
+    border-bottom: 2px solid #555D69;
 
     /* Main color */
 
     color: #57606F;
 }
+.modal-body{
+    padding: 1rem 0.3rem;
+}
+#mehsullinki{
+    top: 7px;
+    width: 15%;
+    padding: 0 12px;
+    background-color: white;
+   
+}
+#Mehsulunlinki{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    
+    /* Second color */
+    
+    color: #555D69;
+}
+#qiymet{
+    width: 100%;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+#TL{
+    width: 50%;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
 
+/* Color */
+
+    color: #F16136;
+}
+.sifaris_redakte_modal_rdk .validate ,.sifaris_redakte_modal_rdk .form-control{
+    padding: 0 5px !important;
+}
+.sifaris_redakte_modal .table th:first-child{
+    border-radius: 8px 0 0 0;
+}
+.sifaris_redakte_modal .table th:last-child{
+    border-radius: 0 8px 0 0;
+}
 .sifaris_redakte_modal .table td {
     font-family: Kanit;
     font-style: normal;
