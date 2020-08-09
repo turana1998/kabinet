@@ -926,7 +926,6 @@ textarea {
 
 .xariciunvan_btn:hover {
     background: #F16136;
-    border: 2px solid #FFFFFF;
     border-radius: 4px;
     color: white;
 }
@@ -1254,7 +1253,8 @@ textarea {
     width: 100%;
 }
 .btn-outline-secondary{
-    border:1px solid #ced4da !important
+    /* border:1px solid #ced4da !important */
+    border: none;
 }
 .footerdiv {
     width: 100%;
@@ -2413,14 +2413,30 @@ box-sizing: border-box;
 
 
 .qeydiyyat_modal {
-    width: 906px;
+    width: 860px;
     height: 705px;
-    margin-left: -181px;
+    margin: auto;
     /* footer */
 
     background: #1F3F30;
     border-radius: 8px;
 }
+.modal-dialog {
+    max-width: 1000px;
+    margin: 1.75rem auto;
+}
+.form-control:focus {
+    color: #495057;
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+select option {
+    color:#495057 ;
+}
+
 
 .qeydiyat_infor {
     margin: auto;
@@ -2503,10 +2519,7 @@ box-sizing: border-box;
 .modal-header {
     border: none !important;
 }
-.modal-dialog{
-    max-width: 800px;
-    margin: 1.75rem 25rem;
-}
+
 .col-yasil-nav {
     background: #223F2E !important;
     height: 700px;
