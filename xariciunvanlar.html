@@ -175,19 +175,13 @@
 
     </div>
     <div class=" mobile-navbar ">
-        <ul class="pl-0 beShow " id="mobile-ul">
-            <li><a href="haqqinda.html">Haqqımızda</a></li>
-            <li><a href="xidmetlerimiz.html">Xidmətlər</a></li>
-            <li><a href="tarifler.html">Tariflər</a></li>
-            <li><a href="kalkulyator.html">Kalkulyator</a></li>
-            <li><a href="f.a.q.html">F.A.Q</a></li>
-            <li><a href="magazalar.html">Mağazalar</a></li>
-            <li>
+        <ul class="pl-0">
+            <li><a href="">Haqqımızda</a></li>
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                     aria-expanded="false">Xidmətlər</a>
                 <div class="dropdown-menu xidmet  ">
-                    <a class="xidmet-a" href="#">Təhlükəli yüklərin daşınması</a>
+                    <a class="xidmet-a" href="xidmetlerimiz.html">Təhlükəli yüklərin daşınması</a>
                     <a class="xidmet-a" href="#">Maye məhsulların daşınması</a>
                     <a class="xidmet-a" href="#">Gömrük sənədləşməsi</a>
                     <a class="xidmet-a" href="#">Təhlükəli yüklərin daşınması</a>
@@ -196,12 +190,16 @@
 
 
                 </div>
-            </li>
-            </li>
-            <li><a href="istifadeqaydalari.html">İstifadə qaydaları</a></li>
-            <li><a href="elaqe.html">Əlaqə</a></li>
-            <li class="nav-item dropdown">
-                <div class="d-flex">
+            </li>      
+            <li><a href="">Tariflər</a></li>
+            <li><a href="">Kalkulyator</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Mağazalar</a></li>
+            <li><a href="">Xəbərlər</a></li>
+            <li><a href="">İstifadə qaydaları</a></li>
+            <li><a href="">Əlaqə</a></li>
+            <li class="nav-item dropdown p-0">
+                <div class="d-flex justify-content-center">
                     <img class="mr-3" src="style/mystyle/img/lang-az.png">
                     <img class="mr-3" src="style/mystyle/img/lang-eng.png">
                     <img src="style/mystyle/img/lang-ru.png">
@@ -279,7 +277,7 @@
                         <h3 class="xariciunvan_title">XARİCİ ÜNVANLARIM</h3>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex pr-0  btns justify-content-end ">
-                        <button type="button" class=" xariciunvan_btn " data-toggle="modal"
+                        <button type="button" class="xariciunvan_btn " data-toggle="modal"
                             data-target="#beyanet_xariciunvan">BƏYAN ET</button>
                         <a href="sifariset.html" class="xariciunvan_btn ">SİFARİŞ ET</a>
                         <a href="kuryersifariset.html" class="xariciunvan_btn ferqli">KURYER SİFARİŞ ET</a>
@@ -970,12 +968,13 @@
                                 <label for="recipient-name" class="col-form-label">İnvoys fayl:</label>
                                 <div class="input-group mb-3">
 
-                                    <div class="custom-file">
-                                        <label class="custom-file-label" for="inputGroupFile01">Choose File</label>
-                                        <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                            aria-describedby="inputGroupFileAddon01">
+                                    <div class="input-group mb-3">
 
-
+                                        <div class='file-input w-100'>
+                                            <input type='file'>
+                                            <span class='button'>Choose File</span>
+                                            
+                                          </div>
                                     </div>
                                 </div>
                             </div>
@@ -984,8 +983,7 @@
                                 <label for="message-text" class="col-form-label">Əlavə qeyd:</label>
                                 <textarea class="form-control" id="message-text" rows="5"></textarea>
                             </div>
-                            <button class="xarici_unvanlar_beyan_btn" type="button" class="btn btn-primary">Save
-                                changes</button>
+                            <button class="xarici_unvanlar_beyan_btn" type="button" class="">YADDA SAXLA</button>
                         </form>
                     </div>
                 </div>

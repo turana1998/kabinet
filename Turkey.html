@@ -162,7 +162,20 @@
     <div class=" mobile-navbar ">
         <ul class="pl-0">
             <li><a href="">Haqqımızda</a></li>
-            <li><a href="">Xidmətlər</a></li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">Xidmətlər</a>
+                <div class="dropdown-menu xidmet  ">
+                    <a class="xidmet-a" href="xidmetlerimiz.html">Təhlükəli yüklərin daşınması</a>
+                    <a class="xidmet-a" href="#">Maye məhsulların daşınması</a>
+                    <a class="xidmet-a" href="#">Gömrük sənədləşməsi</a>
+                    <a class="xidmet-a" href="#">Təhlükəli yüklərin daşınması</a>
+                    <a class="xidmet-a" href="#">Maye məhsulların daşınması</a>
+                    <a class="xidmet-a" href="#">Gömrük sənədləşməsi</a>
+
+
+                </div>
+            </li>      
             <li><a href="">Tariflər</a></li>
             <li><a href="">Kalkulyator</a></li>
             <li><a href="">FAQ</a></li>
@@ -170,24 +183,15 @@
             <li><a href="">Xəbərlər</a></li>
             <li><a href="">İstifadə qaydaları</a></li>
             <li><a href="">Əlaqə</a></li>
+            <li class="nav-item dropdown p-0">
+                <div class="d-flex justify-content-center">
+                    <img class="mr-3" src="style/mystyle/img/lang-az.png">
+                    <img class="mr-3" src="style/mystyle/img/lang-eng.png">
+                    <img src="style/mystyle/img/lang-ru.png">
+                </div>
+            </li>
         </ul>
     </div>
-    <!-- <div class="mobile-right-navbar p-3" style="display: none;" >
-    <div class="nav-line d-flex mt-2"> 
-       <img src="style/mystyle/img/bird.png">
-   </div>
-   <ul class="mx-auto">
-    <li><a href="">Xarici ünvanlarım</a></li>
-    <li><a href="">Bağlamalarım</a></li>
-    <li><a href="">Sifarişlərim</a></li>
-    <li><a href="">Kuryer sifarişlərim</a></li>
-    <li><a href="">Referal hesablar</a></li>
-    <li><a href="">Tənzimləmələr</a></li>
-    <li><a href="">Çıxış</a></li>
-    
-</ul> 
-<hr class="bottom-line">    
-</div> -->
     <div class="container xarici_unvanlar ">
         <div class="row">
             <div class="col-lg-3 col-xl-2 private-account-nav"
@@ -306,7 +310,7 @@ color: #FFFFFF;
                     <div class="row d-flex justify-content-end ">
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex  btns">
-                            <button type="button" class="btn btn-primary xariciunvan_btn " data-toggle="modal"
+                            <button type="button" class="xariciunvan_btn " data-toggle="modal"
                                 data-target="#exampleModal">BƏYAN ET</button>
                             <button class="xariciunvan_btn ">SİFARİŞ ET</button>
                             <button class="xariciunvan_btn ">KURYER SİFARİŞ ET</button>
@@ -490,13 +494,11 @@ color: #FFFFFF;
                             </div>
                             <div class="input-group">
                                 <input type="text" class="form-control"
-                                    aria-label="Text input with segmented dropdown button">
+                                    aria-label="Text input with segmented dropdown button" value="Invoys qiyməti">
                                 <div class="input-group-append">
-                                    <button type="button" class="btn btn-outline-secondary">TL</button>
-                                    <button type="button"
-                                        class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
+                                    <button type="button" class="btn btn-outline-secondary tl">TL</button>
+                                    <button type="button" class="btn btn-outline-secondary arrow">
+                                        <img src="style/mystyle/img/arroww.png">
                                     </button>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="#">Action</a>
@@ -511,12 +513,13 @@ color: #FFFFFF;
                                 <label for="recipient-name" class="col-form-label">İnvoys fayl:</label>
                                 <div class="input-group mb-3">
 
-                                    <div class="custom-file">
-                                        <label class="custom-file-label" for="inputGroupFile01">Choose File</label>
-                                        <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                            aria-describedby="inputGroupFileAddon01">
+                                    <div class="input-group mb-3">
 
-
+                                        <div class='file-input w-100'>
+                                            <input type='file'>
+                                            <span class='button'>Choose File</span>
+                                            
+                                          </div>
                                     </div>
                                 </div>
                             </div>
@@ -525,8 +528,7 @@ color: #FFFFFF;
                                 <label for="message-text" class="col-form-label">Əlavə qeyd:</label>
                                 <textarea class="form-control" id="message-text" rows="5"></textarea>
                             </div>
-                            <button class="xarici_unvanlar_beyan_btn" type="button" class="btn btn-primary">Save
-                                changes</button>
+                            <button class="xarici_unvanlar_beyan_btn" type="button" class="">YADDA SAXLA</button>
                         </form>
                     </div>
                 </div>
@@ -534,6 +536,7 @@ color: #FFFFFF;
             </div>
         </div>
     </div>
+
     <script src="./style/bootstrap/jquery/jquery-3.4.1.min.js"></script>
     <script src="./style/bootstrap/jquery/popper.min.js"></script>
     <script src="./style/slick/slick.min.js"></script>

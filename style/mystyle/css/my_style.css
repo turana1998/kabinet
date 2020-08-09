@@ -11,6 +11,9 @@
 button {
     outline: none;
 }
+textarea{
+    resize: none;
+}
 @font-face {
     font-family: Kanit-bold;
     src: url(../fonts/Kanit/Kanit-Bold.ttf);
@@ -469,7 +472,7 @@ color: #FFFFFF !important;
     list-style-type: none;
     margin-left: 0px;
     line-height: 40px;
-    padding-left: 40px;
+    padding-left: 23px;
     transition: 0.2s;
     margin-top: 2px;
 
@@ -2500,7 +2503,10 @@ box-sizing: border-box;
 .modal-header {
     border: none !important;
 }
-
+.modal-dialog{
+    max-width: 800px;
+    margin: 1.75rem 25rem;
+}
 .col-yasil-nav {
     background: #223F2E !important;
     height: 700px;

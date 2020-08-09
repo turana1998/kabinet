@@ -223,7 +223,9 @@
     /* .qeydiyat_input_col6 {
         width: 37% !important;
     } */
-
+.modal-dialog{
+    margin: 1.75rem auto;
+}
     .qeydiyyat_modal {
         width: 90%;
         margin-left: 20px;
@@ -574,11 +576,7 @@
         z-index: 10000;
     } */
 
-    .birds h2:before,
-    h2:after {
-        background: white;
-    }
-
+    
     .private-account-nav {
         position: absolute;
         width: 240px !important;
