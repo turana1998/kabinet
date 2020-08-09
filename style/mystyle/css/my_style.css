@@ -6,6 +6,10 @@
 }
 *{
     font-family: Kanit;
+   
+}
+button {
+    outline: none;
 }
 @font-face {
     font-family: Kanit-bold;
@@ -306,7 +310,7 @@ color: #FFFFFF !important;
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 
@@ -375,6 +379,76 @@ color: #FFFFFF !important;
     justify-content: center;
     align-items: center;
 }
+.dropdown-menu {
+    min-width: 0 !important;
+    width: 46px !important;
+    height: 77px !important;
+    margin-left: 10px !important;
+    background: #FFFFFF;
+    /* Second color */
+
+    border: 2px solid #555D69;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+}
+
+.xidmet a {
+    color: #555D69 !important;
+    font-size: 14px !important;
+    display: block !important;
+    line-height: 30px !important;
+}
+.xidmet-a:hover{
+    color:#F16136 !important;
+}
+
+.xidmet {
+    min-width: 0 !important;
+    width: 86% !important;
+    height: auto !important;
+    margin-left: -40px !important;
+    left: 7px !important;
+    background: #FFFFFF;
+    /* Second color */
+
+    border: 2px solid #555D69;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+}
+
+.dropdown-item {
+    padding: .25rem 0.5rem !important;
+    width: 34px;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 2px;
+    margin-top: 0;
+
+}
+
+.dropdown-item {
+    text-decoration: none;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    /* White */
+
+
+}
+
+.dropdown-item:hover {
+    background: #F16136;
+    border-radius: 5px;
+    color: #FFFFFF !important;
+}
+
 
 .mobile-navbar {
     position: absolute;
@@ -405,19 +479,6 @@ color: #FFFFFF !important;
     color: #FFFFFF;
     text-decoration: none;
     font-size: 20px;
-}
-
-.mobile-navbar li:hover {
-    background: #dedede;
-    color: #F16136;
-}
-
-.mobile-navbar li:hover a {
-    color: #F16136;
-}
-
-.mobile-navbar li a:hover {
-    color: #F16136;
 }
 
 .mobile-right-navbar {
@@ -1835,6 +1896,7 @@ table::-webkit-scrollbar-thumb:hover {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2px;
+    margin-top: 5px;
 
     /* Main color */
 
@@ -2633,6 +2695,18 @@ table tbody tr {
     width: 97%;
     table-layout: fixed;
 }
+.catdirilma_novleri .checkmark {
+    position: absolute;
+top: 0;
+left: 0;
+height: 16px !important;
+width: 16px !important;
+background-color: #FFFFFF;
+/* border: 1px solid yellow; */
+border: 2px solid #555D69;
+border-radius: 50%;
+}
+
 .checkmark {
     position: absolute;
 top: 0;
@@ -2668,6 +2742,15 @@ display: block;
 }
 
 /* Style the indicator (dot/circle) */
+.catdirilma_novleri .containerr .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+    background: #F16136;
+    }
+    
 .containerr .checkmark:after {
 top: 2px;
 left: 2px;

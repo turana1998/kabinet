@@ -103,10 +103,10 @@
 
 .xidmet {
     min-width: 0 !important;
-    width: 100% !important;
+    width: 75% !important;
     height: auto !important;
     margin-left: 0px !important;
-    left: -40px !important;
+    /* left: -40px !important; */
     background: #FFFFFF;
     /* Second color */
 
@@ -394,6 +394,11 @@
 /* Color */
 
     color: #F16136;
+}
+#tl_mob{
+    position: absolute;
+    left: 77%;
+    color: #F16136 !important;
 }
 .sifaris_redakte_modal_rdk .validate ,.sifaris_redakte_modal_rdk .form-control{
     padding: 0 5px !important;

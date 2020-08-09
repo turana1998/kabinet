@@ -140,24 +140,149 @@
 
 
 @media (max-width: 768px) {
+    .form_qeydiyyat .form-control,
+    .form_qeydiyyat .qeydiyat_input::placeholder,
+    .qeydiyat_input_col9::placeholder,
+    .qeydiyat_input_col6::placeholder,
+    .form_qeydiyyat select option {
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+
+        /* White */
+
+        color: #FFFFFF !important;
+    }
+
+    #qeydiyyat .modal-body {
+        padding: 0 !important;
+    }
+
+    .sekilli {
+        border: none !important;
+    }
+
+    .sekilli img {
+        display: none;
+    }
+
+    .qeydiyat_infor {
+        display: none;
+    }
+
+    .qeydiyyat_btn {
+        width: 193px !important;
+        height: 42px !important;
+    }
+
+    .qeydiyt {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .qeydiyat_input {
+        width: 135px !important;
+        /* height: 29px; */
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #FFFFFF !important;
+    }
+
+    .qeydiyat_input_col6 {
+        width: 90% !important;
+        /* height: 29px; */
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #FFFFFF !important;
+    }
+
+    .qeydiyat_input_col9 {
+        width: 90% !important;
+        /* height: 29px; */
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #FFFFFF !important;
+    }
+
+    .qeydiyyat_modal .form-group {
+        margin-bottom: 0;
+    }
+
+    .qeydiyat_label {
+        font-size: 10px;
+    }
+
+    /* .qeydiyat_input {
+        width: 37% !important;
+    } */
+
+    /* .qeydiyat_input_col6 {
+        width: 37% !important;
+    } */
+
+    .qeydiyyat_modal {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .qeydiyat_infor {
+        width: 100%;
+        font-size: 8px;
+    }
+    .qeydiyyat_modal .modal-header img {
+        position: absolute;
+        left: 4%;
+        top: 5%;
+    }
+
+    .qeydiyyat_btn {
+        width: 287px;
+        height: 19px;
+        display: block;
+        margin: auto;
+        margin-top: 12px;
+        background: #FFFFFF;
+        border-radius: 32px;
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 0px;
+        /* text-align: center; */
+        color: #1F3F30;
+    }
+
+    #mehsullinki{
+        top: 7px !important;
+    width: 34% !important;
+    height: 19px ;
+    padding: 0 5px !important;
+    background-color: white;
+    }
     .baglama_okey{
         width: 158px !important;
     }
     .baglama_notokey{
         width: 158px !important;
     }
-    table tbody {
+    /* table tbody {
         overflow: hidden;
         height: auto;
         max-height: 100% !important;
-    }
+    } */
 
     #Baglama tbody {
         overflow: hidden;
         height: auto;
         max-height: 100% !important;
     }
-
+.tbody_table{
+    margin-top: 40px;
+}
     .table_baglama {
         height: 100%;
     }
@@ -218,7 +343,7 @@
         font-family: Kanit;
         font-style: normal;
         font-weight: normal;
-        font-size: 9px !important;
+        font-size: 12px !important;
         line-height: 27px;
         text-align: center;
         letter-spacing: 0.2px;
@@ -422,6 +547,10 @@
 
 /*end header*/
 @media (max-width:768px) and (min-width:279px) {
+    .info_kuryersifaris_tbl tr th,
+    .info_kuryersifaris_tbl tr td {
+      font-size: 10px !important;
+    }
     .kuryersifarisi_secim .col-sm-3 {
         padding: 0 15px !important;
     }
@@ -513,9 +642,9 @@
         font-weight: 500;
     }
 
-    .custom-control label span {
+    /* .custom-control label span {
         display: none;
-    }
+    } */
 
     .Turkey-Desktop {
         display: none !important;
@@ -632,10 +761,10 @@
         color: gray !important;
 
     }
-
+/* 
     .order-list span {
         margin-left: 20px !important;
-    }
+    } */
 
     .list-main {
         margin-left: 0px !important;

@@ -171,7 +171,20 @@
     <div class=" mobile-navbar ">
         <ul class="pl-0">
             <li><a href="">Haqqımızda</a></li>
-            <li><a href="">Xidmətlər</a></li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">Xidmətlər</a>
+                <div class="dropdown-menu xidmet  ">
+                    <a class="xidmet-a" href="xidmetlerimiz.html">Təhlükəli yüklərin daşınması</a>
+                    <a class="xidmet-a" href="#">Maye məhsulların daşınması</a>
+                    <a class="xidmet-a" href="#">Gömrük sənədləşməsi</a>
+                    <a class="xidmet-a" href="#">Təhlükəli yüklərin daşınması</a>
+                    <a class="xidmet-a" href="#">Maye məhsulların daşınması</a>
+                    <a class="xidmet-a" href="#">Gömrük sənədləşməsi</a>
+
+
+                </div>
+            </li>      
             <li><a href="">Tariflər</a></li>
             <li><a href="">Kalkulyator</a></li>
             <li><a href="">FAQ</a></li>
@@ -179,6 +192,13 @@
             <li><a href="">Xəbərlər</a></li>
             <li><a href="">İstifadə qaydaları</a></li>
             <li><a href="">Əlaqə</a></li>
+            <li class="nav-item dropdown p-0">
+                <div class="d-flex justify-content-center">
+                    <img class="mr-3" src="style/mystyle/img/lang-az.png">
+                    <img class="mr-3" src="style/mystyle/img/lang-eng.png">
+                    <img src="style/mystyle/img/lang-ru.png">
+                </div>
+            </li>
         </ul>
     </div>
     <div class="container xarici_unvanlar ">
@@ -248,46 +268,58 @@
             <div class="col-qalan-hisse">
                 <div>
                     <div class="row ">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6  d-none d-sm-flex xariciunvan_main">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-none d-sm-flex  xariciunvan_main">
                             <h3 class="xariciunvan_title">BAĞLAMALARIM</h3>
                         </div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex  btns justify-content-end">
-                            <button type="button" class="btn btn-primary xariciunvan_btn " data-toggle="modal"
+                            <button type="button" class=" xariciunvan_btn " data-toggle="modal"
                                 data-target="#beyanet_xariciunvan">BƏYAN ET</button>
                             <a href="sifariset.html" class="xariciunvan_btn ">SİFARİŞ ET</a>
                             <a href="kuryersifariset.html" class="xariciunvan_btn ferqli">KURYER SİFARİŞ ET</a>
                         </div>
 
-
-                        <div class="d-flex mt-3 order-list">
-                            <div class="ml-5 list-main custom-control custom-radio"> <input type="radio"
-                                    id="customRadio11" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio11">
-                                </label><img class="ml-3" src="style/mystyle/img/radiobnt1.png"><span>Bəyan edilib
-                                    (1)</span></div>
-                            <div class="ml-5 list-main custom-control custom-radio"> <input type="radio"
-                                    id="customRadio12" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio12">
-                                </label><img class="ml-3" src="style/mystyle/img/radiobnt2.png"><span>Xarici
-                                    anbardadır(1)</span></div>
-                            <div class="ml-5 list-main custom-control custom-radio"> <input type="radio"
-                                    id="customRadio12" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio12">
-                                </label><img class="ml-3" src="style/mystyle/img/radiobnt5.png"><span>Gonderilib
-                                    (1)</span></div>
-
-                            <div class="ml-5 list-main custom-control custom-radio"> <input type="radio"
-                                    id="customRadio13" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio13">
-                                </label><img class="ml-3" src="style/mystyle/img/radiobnt3.png"><span>Bakı ofisindədir
-                                    (1)</span></div>
-                            <div class="ml-5 list-main custom-control custom-radio"> <input type="radio"
-                                    id="customRadio14" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio14">
-                                </label><img class="ml-3" src="style/mystyle/img/radiobnt4.png"><span>Təhvil verilib
-                                    (1)</span></div>
-                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6  d-flex d-sm-none">
+                            <h3 class="xariciunvan_title">BAĞLAMALARIM</h3>
+                        
                     </div>
+                </div>
+                <div class="mt-3 order-list">
+                    <div class="ml-5 list-main custom-control custom-radio">
+                         <label class="containerr">
+                        <input type="radio" name="radio" style="position: absolute;
+                        opacity: 0;
+                        cursor: pointer;">
+                        <span class="checkmark"></span>
+                      </label>
+                    <img class="ml-3" src="style/mystyle/img/radiobnt1.png"><span>Bəyan edilib
+                            (1)</span></div>
+                    <div class="ml-5 list-main custom-control custom-radio">   <label class="containerr">
+                        <input type="radio" name="radio" style="position: absolute;
+                        opacity: 0;
+                        cursor: pointer;">
+                        <span class="checkmark"></span>
+                        </label><img class="ml-3" src="style/mystyle/img/radiobnt2.png"><span>Xarici
+                            anbardadır(1)</span></div>
+                    <div class="ml-5 list-main custom-control custom-radio">   <label class="containerr">
+                        <input type="radio" name="radio" style="position: absolute;
+                        opacity: 0;
+                        cursor: pointer;">
+                        <span class="checkmark"></span><img class="ml-3" src="style/mystyle/img/radiobnt5.png"><span>Gonderilib
+                            (1)</span></div>
+
+                    <div class="ml-5 list-main custom-control custom-radio">   <label class="containerr">
+                        <input type="radio" name="radio" style="position: absolute;
+                        opacity: 0;
+                        cursor: pointer;">
+                        <span class="checkmark"></span><img class="ml-3" src="style/mystyle/img/radiobnt3.png"><span>Bakı ofisindədir
+                            (1)</span></div>
+                    <div class="ml-5 list-main custom-control custom-radio">  <label class="containerr">
+                        <input type="radio" name="radio" style="position: absolute;
+                        opacity: 0;
+                        cursor: pointer;">
+                        <span class="checkmark"></span><img class="ml-3" src="style/mystyle/img/radiobnt4.png"><span>Təhvil verilib
+                            (1)</span></div>
+                </div>
                     <div class="trayektoriyaa">
                         <div class=" d-flex flex-row  mobile-hide"
                             style="margin-top:20px;justify-content: center;width: 93%;">
@@ -765,49 +797,6 @@
                         </table>
 
                     </div>
-                    <div class="d-flex justify-content-end mb-4 mr-4">
-                        <button class="sifaris_odeniset">ÖDƏNİŞ ET</button>
-                    </div>
-                    <div class="footer">
-                        <div class="row">
-                            <div class="cols ">
-                                <div class="footerdiv ">
-                                    <img src="style/mystyle/img/clock.png" alt="">
-                                    <p>BAKU TIME: 10:13</p>
-                                </div>
-                            </div>
-                            <div class="cols">
-                                <div class="footerdiv">
-                                    <img src="style/mystyle/img/clock.png" alt="">
-                                    <p>ISTANBUL TIME: 10:13</p>
-                                </div>
-                            </div>
-                            <div class="cols">
-                                <div class="footerdiv">
-                                    <img src="style/mystyle/img/clock.png" alt="">
-                                    <p>WILMINGTON TIME: 9:12</p>
-                                </div>
-                            </div>
-                            <div class="cols">
-                                <div class="footerdiv">
-                                    <img src="style/mystyle/img/clock.png" alt="">
-                                    <p>FRANKFURT TIME: 9:12</p>
-                                </div>
-                            </div>
-                            <div class="cols">
-                                <div class="footerdiv">
-                                    <img src="style/mystyle/img/clock.png" alt="">
-                                    <p>DUBAI TIME: 11:13</p>
-                                </div>
-                            </div>
-                            <div class="cols">
-                                <div class="footerdiv">
-                                    <img src="style/mystyle/img/clock.png" alt="">
-                                    <p>LONDON TIME: 11:13</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-12 tables-mobile my-4">
                         <div class="row tables-mobile-container">
                             <div class="col-6 table-mobile-first">
@@ -859,7 +848,8 @@
                                 </div>
                             </div>
                             <div class="col-6 table-mobile-second text-right">
-                                <img src="style/mystyle/img/eyemobile.png">
+                                <img  data-toggle="modal"
+                                data-target="#info_baglama" src="style/mystyle/img/eyemobile.png">
                             </div>
                         </div>
                         <div class="row tables-mobile-container">
@@ -1129,6 +1119,50 @@
                         </div>
                       
                     </div>
+                    <div class="d-flex justify-content-end mb-4 mr-4">
+                        <button class="sifaris_odeniset">ÖDƏNİŞ ET</button>
+                    </div>
+                    <div class="footer">
+                        <div class="row">
+                            <div class="cols ">
+                                <div class="footerdiv ">
+                                    <img src="style/mystyle/img/clock.png" alt="">
+                                    <p>BAKU TIME: 10:13</p>
+                                </div>
+                            </div>
+                            <div class="cols">
+                                <div class="footerdiv">
+                                    <img src="style/mystyle/img/clock.png" alt="">
+                                    <p>ISTANBUL TIME: 10:13</p>
+                                </div>
+                            </div>
+                            <div class="cols">
+                                <div class="footerdiv">
+                                    <img src="style/mystyle/img/clock.png" alt="">
+                                    <p>WILMINGTON TIME: 9:12</p>
+                                </div>
+                            </div>
+                            <div class="cols">
+                                <div class="footerdiv">
+                                    <img src="style/mystyle/img/clock.png" alt="">
+                                    <p>FRANKFURT TIME: 9:12</p>
+                                </div>
+                            </div>
+                            <div class="cols">
+                                <div class="footerdiv">
+                                    <img src="style/mystyle/img/clock.png" alt="">
+                                    <p>DUBAI TIME: 11:13</p>
+                                </div>
+                            </div>
+                            <div class="cols">
+                                <div class="footerdiv">
+                                    <img src="style/mystyle/img/clock.png" alt="">
+                                    <p>LONDON TIME: 11:13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
                 </div>
             </div>
         </div>
@@ -1222,24 +1256,24 @@
                 <div class="modal-body">
                     <form class="d-flex form_qeydiyyat ">
                         <div class="row">
-                            <div class="d-flex qeydiyt">
+                           
                                 <button class="cixis_qeydiyat" data-toggle="modal" data-dismiss="modal"></button>
-                                <div class="form-group  col-3">
+                                <div class="form-group col-6  col-sm-3">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Ad</label>
                                     <input type="text" class="form-control qeydiyat_input" id="recipient-name"
                                         value="Fend" dis>
                                 </div>
-                                <div class="form-group col-3">
+                                <div class="form-group  col-6  col-sm-3">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Soyad</label>
                                     <input type="text" class="form-control qeydiyat_input" id="recipient-name"
                                         value="Nesirov" disabled>
                                 </div>
-                                <div class="form-group col-3">
+                                <div class="form-group  col-6  col-sm-3">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Email</label>
                                     <input type="text" class="form-control qeydiyat_input" id="recipient-name"
                                         value="fendnesirov@gmail.com" disabled>
                                 </div>
-                                <div class="form-group col-3">
+                                <div class="form-group  col-6  col-sm-3">
 
                                     <div class="d-flex" style="justify-content: space-between;">
                                         <label for="message-text" class="col-form-label  qeydiyat_label">Doğum
@@ -1255,21 +1289,21 @@
 
                                 </div>
 
-                            </div>
-                            <div class="d-flex qeydiyt">
-                                <div class="form-group col-3">
+                           
+                            <div class="row">
+                                <div class="form-group  col-6  col-sm-3">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Telefon
                                         nömrəsi</label>
                                     <input type="text" class="form-control qeydiyat_input" id="recipient-name"
                                         value="+994770000000" disabled>
                                 </div>
-                                <div class="form-group col-3">
+                                <div class="form-group  col-6  col-sm-3">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Əlavə Telefon
                                         nömrəsi</label>
                                     <input type="text" class="form-control qeydiyat_input" id="recipient-name"
                                         value="+994120000000" disabled>
                                 </div>
-                                <div class="form-group col-3">
+                                <div class="form-group  col-6  col-sm-3">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Dil Seçimi</label>
                                     <select type="text" class="form-control qeydiyat_input ferqlii" id="recipient-name">
                                         <option selected>Azərbaycan dili</option>
@@ -1277,7 +1311,7 @@
                                         <option>EN</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-3">
+                                <div class="form-group  col-6  col-sm-3">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Şəhər</label>
                                     <input type="text" class="form-control qeydiyat_input" id="recipient-name"
                                         value="Baki" disabled>
@@ -1290,15 +1324,15 @@
                                 <input style="width: 100%;" type="text" class="form-control qeydiyat_input"
                                     id="recipient-name" value="Filan ünvan, filan küçə" disabled>
                             </div>
-                            <div class="d-flex qeydiyt">
-                                <div class="form-group col-3">
+                            <div class="row">
+                                <div class="form-group col-6  col-sm-3">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Sənədin
                                         seriası</label>
                                     <select type="text" class="form-control qeydiyat_input" id="recipient-name">
                                         <option>AZE</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-9">
+                                <div class="form-group  col-6  col-sm-9">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Sənədin
                                         nömrəsi</label>
                                     <input type="text" class="form-control qeydiyat_input_col9" id="recipient-name"
@@ -1306,7 +1340,7 @@
                                 </div>
 
                             </div>
-                            <div class="d-flex qeydiyt">
+                            <div class="row">
 
                                 <div class="form-group col-6">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Şəxsiyyət
@@ -1323,7 +1357,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="d-flex qeydiyt">
+                            <div class="d-flex ">
 
                                 <div class="form-group col-6">
                                     <label for="message-text" class="col-form-label  qeydiyat_label">Referral customer

@@ -262,32 +262,41 @@
                         <button onclick="ReferalSifaris()" id="referaluzre2">Referallar üzrə sifarişlər</button>
                     </div>
                 </div>
-                <div class="d-flex mt-3 order-list">
-                    <div class="ml-5 list-main custom-control custom-radio"> <input type="radio" id="customRadio11"
-                            name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio11">
-                        </label><img class="ml-3" src="style/mystyle/img/radiobnt1.png"><span>Bəyan edilib
+                <div class="mt-3 order-list" id="order-list"style="display: none !important;">
+                    <div class="ml-5 list-main custom-control custom-radio">
+                         <label class="containerr">
+                        <input type="radio" name="radio" style="position: absolute;
+                        opacity: 0;
+                        cursor: pointer;">
+                        <span class="checkmark"></span>
+                      </label>
+                    <img class="ml-3" src="style/mystyle/img/radiobnt1.png"><span>Bəyan edilib
                             (1)</span></div>
-                    <div class="ml-5 list-main custom-control custom-radio"> <input type="radio" id="customRadio12"
-                            name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio12">
+                    <div class="ml-5 list-main custom-control custom-radio">   <label class="containerr">
+                        <input type="radio" name="radio" style="position: absolute;
+                        opacity: 0;
+                        cursor: pointer;">
+                        <span class="checkmark"></span>
                         </label><img class="ml-3" src="style/mystyle/img/radiobnt2.png"><span>Xarici
                             anbardadır(1)</span></div>
-                    <div class="ml-5 list-main custom-control custom-radio"> <input type="radio" id="customRadio12"
-                            name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio12">
-                        </label><img class="ml-3" src="style/mystyle/img/radiobnt5.png"><span>Gonderilib
+                    <div class="ml-5 list-main custom-control custom-radio">   <label class="containerr">
+                        <input type="radio" name="radio" style="position: absolute;
+                        opacity: 0;
+                        cursor: pointer;">
+                        <span class="checkmark"></span><img class="ml-3" src="style/mystyle/img/radiobnt5.png"><span>Gonderilib
                             (1)</span></div>
 
-                    <div class="ml-5 list-main custom-control custom-radio"> <input type="radio" id="customRadio13"
-                            name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio13">
-                        </label><img class="ml-3" src="style/mystyle/img/radiobnt3.png"><span>Bakı ofisindədir
+                    <div class="ml-5 list-main custom-control custom-radio">   <label class="containerr">
+                        <input type="radio" name="radio" style="position: absolute;
+                        opacity: 0;
+                        cursor: pointer;">
+                        <span class="checkmark"></span><img class="ml-3" src="style/mystyle/img/radiobnt3.png"><span>Bakı ofisindədir
                             (1)</span></div>
-                    <div class="ml-5 list-main custom-control custom-radio"> <input type="radio" id="customRadio14"
-                            name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio14">
-                        </label><img class="ml-3" src="style/mystyle/img/radiobnt4.png"><span>Təhvil verilib
+                    <div class="ml-5 list-main custom-control custom-radio">  <label class="containerr">
+                        <input type="radio" name="radio" style="position: absolute;
+                        opacity: 0;
+                        cursor: pointer;">
+                        <span class="checkmark"></span><img class="ml-3" src="style/mystyle/img/radiobnt4.png"><span>Təhvil verilib
                             (1)</span></div>
                 </div>
                 <div class="row" id="trayektoriya" style="display: none;">
@@ -670,7 +679,7 @@
                 </div>
             </div>
 
-            <div class="col-12 tables-mobile my-4 d-none" id="mobile-sifaris">
+            <div class="col-12 tables-mobile my-4" id="mobile-sifaris" style="display: none;">
                 <div class="row tables-mobile-container">
                     <div class="col-6 table-mobile-first">
                         <p>ID</p>
@@ -711,7 +720,7 @@
                     <div class="col-6 table-mobile-first">
                     </div>
                     <div class="col-6 table-mobile-second text-right">
-                        <i class="fas fa-eye fa-2x"></i>
+                        <img src="style/mystyle/img/eyemobile.png">
                     </div>
                 </div>
                 <div class="row tables-mobile-container">
@@ -754,7 +763,7 @@
                     <div class="col-6 table-mobile-first">
                     </div>
                     <div class="col-6 table-mobile-second text-right">
-                        <i class="fas fa-eye fa-2x"></i>
+                       <img src="style/mystyle/img/eyemobile.png">
                     </div>
                 </div>
                 <div class="row tables-mobile-container">
@@ -797,7 +806,7 @@
                     <div class="col-6 table-mobile-first">
                     </div>
                     <div class="col-6 table-mobile-second text-right">
-                        <i class="fas fa-eye fa-2x"></i>
+                        <img src="style/mystyle/img/eyemobile.png">
                     </div>
                 </div>
                 <div class="row tables-mobile-container">
@@ -840,7 +849,7 @@
                     <div class="col-6 table-mobile-first">
                     </div>
                     <div class="col-6 table-mobile-second text-right">
-                        <i class="fas fa-eye fa-2x"></i>
+                        <img src="style/mystyle/img/eyemobile.png">
                     </div>
                 </div>
                 <div class="row tables-mobile-container">
@@ -883,7 +892,7 @@
                     <div class="col-6 table-mobile-first">
                     </div>
                     <div class="col-6 table-mobile-second text-right">
-                        <i class="fas fa-eye fa-2x"></i>
+                        <img src="style/mystyle/img/eyemobile.png">
                     </div>
                 </div>
             </div>
@@ -977,6 +986,7 @@
         function ReferalSiyahi() {
             document.getElementById("table_siyahi").style.display = "block";
             document.getElementById("table_sifaris").style.display = "none";
+            document.getElementById("order-list").style.display = "none";
             document.getElementById("mobile-sifaris").style.display = "none";
             document.getElementById("trayektoriya").style.display = "none";
             document.getElementById("referaluzre").style.borderColor = "#F16136";
@@ -993,6 +1003,7 @@
             document.getElementById("table_siyahi").style.display = "none";
             document.getElementById("table_sifaris").style.display = "block";
             document.getElementById("mobile-sifaris").style.display = "block";
+            document.getElementById("order-list").style.display = "block";
             document.getElementById("trayektoriya").style.display = "flex";
             document.getElementById("referaluzre2").style.borderColor= "#F16136";
             document.getElementById("referaluzre2").style.color = "#F16136"
