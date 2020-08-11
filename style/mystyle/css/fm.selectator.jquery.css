@@ -282,6 +282,7 @@
 }
 .selectator_options .selectator_option .selectator_option_left {
   float: left;
+  margin-right: 10px;
 }
 .selectator_options .selectator_option .selectator_option_left img {
   height: 30px;

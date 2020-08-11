@@ -25,7 +25,7 @@ $("#mobile-toggle").click(function () {
     navStatus = false;
     document.getElementById("overlay").style.display = "none";
     $("#nav-button").removeClass();
-    $("#nav-button").addClass("fas fa-bars ml-1")
+    $("#nav-button").addClass("fas fa-bars")
   } else {
     $(".mobile-navbar").animate({
       left: "0px",
@@ -33,7 +33,7 @@ $("#mobile-toggle").click(function () {
     navStatus = true;
     document.getElementById("overlay").style.display = "block";
     $("#nav-button").removeClass();
-    $("#nav-button").addClass("fa fa-times ml-1")
+    $("#nav-button").addClass("fa fa-times")
     $(".private-account-nav").animate({
       right: "-240px",
       display: "none"
@@ -44,6 +44,8 @@ $("#mobile-toggle").click(function () {
       $(".private-account-nav").hide();
     }, 1400);
   }
+  $("#nav-button").removeClass();
+  $("#nav-button").addClass("fa fa-times")
 });
 let rightnavStatus = false;
 $("#right-nav").click(function () {
@@ -55,6 +57,8 @@ $("#right-nav").click(function () {
 
     rightnavStatus = false;
     document.getElementById("overlay").style.display = "none";
+    $("#nav-button2").removeClass();
+    $("#nav-button2").addClass("fas fa-user")
     setTimeout(function () {
       $(".private-account-nav").hide();
     }, 1400);
@@ -71,8 +75,8 @@ $("#right-nav").click(function () {
     }, 1500);
     navStatus = false;
     document.getElementById("overlay").style.display = "block";
-    $("#nav-button").removeClass();
-    $("#nav-button").addClass("fas fa-bars ml-1")
+    $("#nav-button2").removeClass();
+    $("#nav-button2").addClass("fa fa-times")
   }
 });
 // $(document).ready(function () {

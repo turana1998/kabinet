@@ -26,7 +26,7 @@
             <button class="navbar-toggler col-auto" type="button" data-toggle="collapse" id="mobile-toggle"
                 data-target="navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
                 aria-label="Toggle navigation" style="outline: none;">
-                <span><i id="nav-button" class="fas fa-bars ml-1"></i></span>
+                <span><i id="nav-button" class="fas fa-bars"></i></span>
             </button>
             <div class="languages d-flex d-sm-none">
                 <li class="nav-item dropdown" style="list-style: none;">
@@ -152,9 +152,11 @@
                 </li>
             </div>
 
-            <div id="right-nav" class="mobile-users d-flex d-sm-none navbar-toggler">
-                <img src="style/mystyle/img/userrespons.png" style="width: 18px;height: 20px;margin: auto;">
-            </div>
+            <button class="navbar-toggler col-auto" type="button" data-toggle="collapse" id="right-nav"
+            data-target="navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
+            aria-label="Toggle navigation" style="outline: none;">
+            <span><i id="nav-button2" class="fas fa-user"></i></span>
+        </button>
         </nav>
 
 
@@ -194,33 +196,30 @@
     </div>
     <div class="container xarici_unvanlar ">
         <div class="row">
-            <div class="col-lg-3 col-xl-2 private-account-nav"
-                style="background: #223F2E !important; height:700px;border-radius: 8px;width: 255px;">
-                <nav class="navbar navs navbar-expand-lg navbar-light bg-light">
-
-
+            <div class=" col-yasil-nav private-account-nav">
+                <nav class="navbar navs navbar-expand-lg navbar-light bg-light" style="border-radius: 8px;">
                     <div class="collapse navbar-collapse d-flex flex-column my-top-0" id="navbarSupportedContent2"
                         style="margin-top: 400px;">
                         <h5 class="sexsi_kabinet_title beNone">ŞƏXSİ KABİNET</h5>
                         <div class="user_image beNone">
-                            <div class="img-plus"><i class="fas fa-plus  mytxtcolor"></i></div>
+                            <div class="img-plus"><img src="style/mystyle/img/add.png"></div>
                             <img src="style/mystyle/img/user.png">
                         </div>
                         <p class="sexsi_kabinet_p beNone">Name Surname</p>
-                        <p class="sexsi_kabinet_p beNone">ID : CV1245</p>
+                        <p class="sexsi_kabinet_p beNone">ID: CV1245</p>
                         <div class=" birds mt-1 mb-1 ">
                             <h2><img src="style/mystyle/img/bird.png"></h2>
 
 
                         </div>
                         <ul class="navbar-nav  d-flex flex-column">
-                            <li class="nav-items">
+                            <li class="nav-items                                                                                 ">
                                 <i><img src="style/mystyle/img/li-home.png"></i>
-                                <a class="nav-linkk" href="xariciunvanlar.html">Xarici ünvanlarım</a>
+                                <a class="nav-linkk  " href="xariciunvanlar.html">Xarici ünvanlarım</a>
                             </li>
                             <li class="nav-items">
                                 <i><img src="style/mystyle/img/li-baglm.png"></i>
-                                <a class="nav-linkk" href="baglamalarimTAMDEШL.html">Bağlamalarım</a>
+                                <a class="nav-linkk" href="baglamalarim.html">Bağlamalarım</a>
                             </li>
                             <li class="nav-items">
                                 <i><img src="style/mystyle/img/li-sifaris.png"></i>
@@ -234,73 +233,38 @@
                                 <i><img src="style/mystyle/img/li-hesab.png"></i>
                                 <a class="nav-linkk" href="referathesablar.html">Referal hesablar</a>
                             </li>
+                            <li class="nav-items d-block d-sm-none">
+                                <i><img src="style/mystyle/img/li-hesab.png"></i>
+                                <a class="nav-linkk" href="#tenzimlemeler" role="button"
+                                data-toggle="modal">Tenzimlemeler</a>
+                        
+                            </li>
+                            <li class="nav-items d-block d-sm-none">
+                                <i><img src="style/mystyle/img/li-hesab.png"></i>
+                                <a class="nav-linkk" href="#">Cixis</a>
+                            </li>
 
 
                         </ul>
                         <hr class=" bottom-line">
-                        <div class="balans d-flex flex-row justify-content-between w-100">
+                        <div class="balans d-flex flex-row ">
                             <p class="money">Balans:<span>&nbsp&nbsp123</span>AZN</p>
-                            <img class="ml-4" src="style/mystyle/img/add.png" alt="">
+                            <a href="balans.html">
+                                <img class="ml-4" src="style/mystyle/img/addbalans.png" alt="">
+                            </a>
                         </div>
                         <h5 class="sexsi_kabinet_news mb-3">SON 30 GÜN</h5>
-                        <div class="d-flex flex-row" style="">
-                            <span style="
-        width: 14px;
-        height: 14px; font-family: San Francisco;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 24px;
-        text-align: center;
-        letter-spacing: 0.2px;
-
-        /* White */
-        color: #FFFFFF;
-        ">$</span>
-                            <div class="progress" style=" width: 145px !important;
-        height: 26px;border: 1px solid #FFFFFF;
-        box-sizing: border-box;
-        border-radius: 13px;background-color: transparent;position: relative;">
-                                <span style="position: absolute;
-        font-family: San Francisco;
-        font-style: normal;
-        text-align: center;
-        font-weight: normal;
-        padding: 3px 0px 0 0;
-        font-size: 14px;
-        line-height: 17px;
-        color: #FFFFFF;
-        
-        "> <span style="position: absolute;left: 5px">0</span>
+                        <div class="d-flex flex-row">
+                            <span class="dollar_isaresi">$</span>
+                            <div class="progress">
+                                <span class="bos_span">
+                                    <span style="position: absolute;left: 5px">0</span>
                                     <span style="position: relative;left:70px">622</span></span>
-                                <img src="style/mystyle/img/progress_bar.png" style="position: ;" alt="">
-                                <span style="
-    font-family: San Francisco;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    padding: 3px 0px 0 0;
-    color: #FFFFFF;
-    position: absolute;
-    right: 0px;
-    "> 1000</span>
+                                <img src="style/mystyle/img/progress_bar.png" alt="">
+                                <span class="progress_last_number"> 1000</span>
                             </div>
                         </div>
-                        <a href="# " style="
-width: 60px;
-height: 10px;
-font-family: San Francisco;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-align-items: center;
-text-align: center;
-margin-top: 10px;
-/* White */
-color: #FFFFFF;
-">Ətraflı</a>
+                        <a class="etrafli_link" href="baglamalarim.html">Ətraflı</a>
                     </div>
                 </nav>
             </div>
@@ -460,6 +424,145 @@ color: #FFFFFF;
                 </div>
             </div>
         </div>
+
+    </div>
+    <div class="footerr mt-2">
+        <div class="container">
+            <div class="row footer-info pt-3">
+                <div class=" col-sm-4 col-12 mt-5 p-0">
+                    <div class="info-logo">
+                        <img class="logo-footer" src="./style/mystyle/img/footerlogo.png" alt="">
+                    </div>
+                    <div class="description mt-3">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12 mt-5 p-0">
+                    <span class="contact-heading">Əlaqə vasitələri</span>
+                    <hr class="heading-line">
+                    <div class="mt-3 contact-info">
+                        <p>Ünvan: Azərbaycan, Bakı, Dilarə Əliyeva küç., 251, AZ 1014</p>
+                        <p>Telefon: (+99412) 310 39 39</p>
+                        <p>Mobil: (+99451) 500 39 39</p>
+                        <p>E-poçt: info@colibri.az</p>
+                        <p>Sos. şəbəkələr: <span><img src="style/mystyle/img/fb_foot.png"></span> <span><img
+                                    src="style/mystyle/img/insta_foot.png"></span><span><img
+                                    src="style/mystyle/img/youtube_foot.png"></span></p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12 mt-5 p-0">
+                    <span class="contact-heading">Müraciət forması</span>
+                    <hr class="heading-line">
+                    <form class="footer_form">
+                        <div class="form-row mt-3">
+                            <div class="form-group col-md-6">
+                                <input style="width:100% !important; max-width: 100%" type="text" class="form-control"
+                                    id="name" placeholder="Adınız">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input style="width:100% !important; max-width: 100%" type="email" class="form-control"
+                                    id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3 ">
+                            <input style="width:100% !important; max-width: 100%" type="text" class="form-control"
+                                id="subject" placeholder="Mövzu">
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea style="width:100%; max-width: 100%" name="message" id="message" rows="3"
+                                placeholder="Mesaj"></textarea>
+                            <button type="submit" class="send-message">GÖNDƏR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-info-mobile d-flex d-sm-none " style="position: relative;">
+            <div class="up-circle" style="width: 48px;
+            height: 48px;
+        
+            border-radius: 50%;
+            background: #374C3F;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            box-sizing: border-box;
+            position: absolute;
+            left: 43%;
+            top: -26%;">
+                <a href="#" class="circle_a" style="color: white !important" href="#"><img
+                        src="style/mystyle/img/up.png"></a>
+            </div>
+            <div class="col-12 text-center mt-3 ">
+
+                <p class="" style="margin-top: 40px;"><span class="mr-4"><img
+                            src="style/mystyle/img/fb_foot.png"></span> <span class="mr-4"><img
+                            src="style/mystyle/img/insta_foot.png"></span><span><img
+                            src="style/mystyle/img/youtube_foot.png"></span>
+            </div>
+        </div>
+        <div class="row footer-bottom-mobile d-flex d-sm-none">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <button class="condition">Daşınma şərtləri</button>
+                <button class="rules">İstifadə qaydaları</button>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <p style="font-family: Kanit-2;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                padding: 13px 5px;
+                text-align: center;
+                ">Copyright © 2020 Colibri Express. Bütün hüquqlar qorunur.</p>
+            </div>
+
+        </div>
+        <div class="upscrool d-none d-sm-flex">
+            <div class="up-circle" style="position:absolute; width: 48px;
+            height: 48px;
+            left: 50%;
+    margin-top: -25px;
+            border-radius: 50%;
+            background: #374C3F;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            box-sizing: border-box;">
+                <a href="#" class="circle_a" style="color: white !important" href="#"><img
+                        src="style/mystyle/img/up.png"></a>
+            </div>
+            <hr class="foot_hr">
+        </div>
+        <div class="container">
+
+            <div class="row footer-bottom d-none d-sm-flex ">
+
+                <div class="col-6 p-0 mt-3 mb-2">
+
+                    <p style="
+                        font-family: Kanit-2;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        display: flex;
+                        align-items: center;
+                        
+                        /* White */
+                        
+                        color: #FFFFFF;">Copyright © 2020 Colibri Express. Bütün hüquqlar qorunur.</p>
+                </div>
+                <div class="col-6 d-flex  justify-content-lg-end align-items-center   mb-1">
+                    <button class="condition">Daşınma şərtləri</button>
+                    <button class="rules">İstifadə qaydaları</button>
+                </div>
+            </div>
+        </div>
+
+
 
     </div>
     <div class="modal fade" id="beyanet_xariciunvan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

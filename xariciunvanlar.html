@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./style/mystyle/css/responsiv.css">
     <link rel="stylesheet" href="./style/mystyle/css/foryou.css">
     <link rel="stylesheet" href="https://use.typekit.net/dfw0poo.css">
+    <link rel="stylesheet" href="./style/materialize/css/materializee.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
@@ -42,7 +43,7 @@
             <button class="navbar-toggler col-auto" type="button" data-toggle="collapse" id="mobile-toggle"
                 data-target="navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
                 aria-label="Toggle navigation" style="outline: none;">
-                <span><i id="nav-button" class="fas fa-bars ml-1"></i></span>
+                <span><i id="nav-button" class="fas fa-bars"></i></span>
             </button>
             <div class="languages d-flex d-sm-none">
                 <li class="nav-item dropdown" style="list-style: none;">
@@ -61,8 +62,8 @@
                 </a>
             </div>
             <div class="user_id d-flex d-sm-none d-flex flex-column  ">
-                <p class="text-center">ID:<span style="font-weight:500">C12346</span></p>
-                <p>Fend Nəsirov</p>
+                <p class="text-center mb-1">ID:<span style="font-weight:500">C12346</span></p>
+                <p class="mt-2">Fend Nəsirov</p>
             </div>
 
             <div class="nav-logo mt-auto d-none d-lg-flex d-sm-flex">
@@ -168,9 +169,12 @@
                 </li>
             </div>
 
-            <div id="right-nav" class="mobile-users d-flex d-sm-none navbar-toggler">
-                <img src="style/mystyle/img/userrespons.png" style="width: 18px;height: 20px;margin: auto;">
-            </div>
+                <button class="navbar-toggler col-auto" type="button" data-toggle="collapse" id="right-nav"
+                data-target="navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
+                aria-label="Toggle navigation" style="outline: none;">
+                <span><i id="nav-button2" class="fas fa-user"></i></span>
+            </button>
+            
         </nav>
 
     </div>
@@ -246,6 +250,16 @@
                                 <i><img src="style/mystyle/img/li-hesab.png"></i>
                                 <a class="nav-linkk" href="referathesablar.html">Referal hesablar</a>
                             </li>
+                            <li class="nav-items d-block d-sm-none">
+                                <i><img src="style/mystyle/img/li-hesab.png"></i>
+                                <a class="nav-linkk" href="#tenzimlemeler" role="button"
+                                data-toggle="modal">Tenzimlemeler</a>
+                        
+                            </li>
+                            <li class="nav-items d-block d-sm-none">
+                                <i><img src="style/mystyle/img/li-hesab.png"></i>
+                                <a class="nav-linkk" href="#">Cixis</a>
+                            </li>
 
 
                         </ul>
@@ -286,7 +300,7 @@
                 </div>
 
                 <div class="row olkeler d-sm-none d-flex">
-                    <a href="Turkey.html">
+                    <a class="turkey" href="Turkey.html">
                         <div class="olke">
                             <span class="iconify" data-icon="emojione-flag-for-turkey" data-inline="false"
                                 style="font-size: 24px; height: 24px; width: 24px;margin-top: 8px;"></span>
@@ -913,8 +927,149 @@
                         </div>
                     </div>
                 </div>
+              
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="footerr mt-2">
+        <div class="container">
+            <div class="row footer-info pt-3">
+                <div class=" col-sm-4 col-12 mt-5 p-0">
+                    <div class="info-logo">
+                        <img class="logo-footer" src="./style/mystyle/img/footerlogo.png" alt="">
+                    </div>
+                    <div class="description mt-3">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12 mt-5 p-0">
+                    <span class="contact-heading">Əlaqə vasitələri</span>
+                    <hr class="heading-line">
+                    <div class="mt-3 contact-info">
+                        <p>Ünvan: Azərbaycan, Bakı, Dilarə Əliyeva küç., 251, AZ 1014</p>
+                        <p>Telefon: (+99412) 310 39 39</p>
+                        <p>Mobil: (+99451) 500 39 39</p>
+                        <p>E-poçt: info@colibri.az</p>
+                        <p>Sos. şəbəkələr: <span><img src="style/mystyle/img/fb_foot.png"></span> <span><img
+                                    src="style/mystyle/img/insta_foot.png"></span><span><img
+                                    src="style/mystyle/img/youtube_foot.png"></span></p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12 mt-5 p-0">
+                    <span class="contact-heading">Müraciət forması</span>
+                    <hr class="heading-line">
+                    <form class="footer_form">
+                        <div class="form-row mt-3">
+                            <div class="form-group col-md-6">
+                                <input style="width:100% !important; max-width: 100%" type="text" class="form-control"
+                                    id="name" placeholder="Adınız">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input style="width:100% !important; max-width: 100%" type="email" class="form-control"
+                                    id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3 ">
+                            <input style="width:100% !important; max-width: 100%" type="text" class="form-control"
+                                id="subject" placeholder="Mövzu">
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea style="width:100%; max-width: 100%" name="message" id="message" rows="3"
+                                placeholder="Mesaj"></textarea>
+                            <button type="submit" class="send-message">GÖNDƏR</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+        <div class="row footer-info-mobile d-flex d-sm-none " style="position: relative;">
+            <div class="up-circle" style="width: 48px;
+            height: 48px;
+        
+            border-radius: 50%;
+            background: #374C3F;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            box-sizing: border-box;
+            position: absolute;
+            left: 43%;
+            top: -26%;">
+                <a href="#" class="circle_a" style="color: white !important" href="#"><img
+                        src="style/mystyle/img/up.png"></a>
+            </div>
+            <div class="col-12 text-center mt-3 ">
+
+                <p class="" style="margin-top: 40px;"><span class="mr-4"><img
+                            src="style/mystyle/img/fb_foot.png"></span> <span class="mr-4"><img
+                            src="style/mystyle/img/insta_foot.png"></span><span><img
+                            src="style/mystyle/img/youtube_foot.png"></span>
+            </div>
+        </div>
+        <div class="row footer-bottom-mobile d-flex d-sm-none">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <button class="condition">Daşınma şərtləri</button>
+                <button class="rules">İstifadə qaydaları</button>
+            </div>
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <p style="font-family: Kanit-2;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                padding: 13px 5px;
+                text-align: center;
+                ">Copyright © 2020 Colibri Express. Bütün hüquqlar qorunur.</p>
+            </div>
+
+        </div>
+        <div class="upscrool d-none d-sm-flex">
+            <div class="up-circle" style="position:absolute; width: 48px;
+            height: 48px;
+            left: 50%;
+    margin-top: -25px;
+            border-radius: 50%;
+            background: #374C3F;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            box-sizing: border-box;">
+                <a href="#" class="circle_a" style="color: white !important" href="#"><img
+                        src="style/mystyle/img/up.png"></a>
+            </div>
+            <hr class="foot_hr">
+        </div>
+        <div class="container">
+
+            <div class="row footer-bottom d-none d-sm-flex ">
+
+                <div class="col-6 p-0 mt-3 mb-2">
+
+                    <p style="
+                        font-family: Kanit-2;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        display: flex;
+                        align-items: center;
+                        
+                        /* White */
+                        
+                        color: #FFFFFF;">Copyright © 2020 Colibri Express. Bütün hüquqlar qorunur.</p>
+                </div>
+                <div class="col-6 d-flex  justify-content-lg-end align-items-center   mb-1">
+                    <button class="condition">Daşınma şərtləri</button>
+                    <button class="rules">İstifadə qaydaları</button>
+                </div>
+            </div>
+        </div>
+
+
 
     </div>
     <div class="modal fade" id="beyanet_xariciunvan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -923,20 +1078,28 @@
             <div class="modal-content xarici_unvanlar_beyan">
                 <div class="modal-header xarici_unvanlar_beyan_header">
                     <h5 class="modal-title" id="exampleModalLabel">ÖNCƏDƏN BƏYAN ET</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close mt-0" data-dismiss="modal" aria-label="Close">
                         <img src="style/mystyle/img/modal-none.png" style="color: #FFFFFF;">
                     </button>
                 </div>
                 <div class="modal-body xarici_unvanlar_beyan_modal">
                     <div class="modal-body">
                         <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="Tracking ID" placeholder="Tracking ID">
+                            <div class="input-field col-12 p-0 ">
+                                <input id="Tracking ID" type="text" class="validate">
+                                <label for="Tracking ID">Tracking ID</label>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
+                                <input type="text" class="form-control" id="Tracking ID" placeholder="Tracking ID">
+                            </div> -->
+                            <div class="input-field col-12 p-0 ">
+                                <input id="Mağazanın/saytın adı" type="text" class="validate">
+                                <label for="Mağazanın/saytın adı">Mağazanın/saytın adı</label>
+                            </div>
+                            <!-- <div class="form-group">
                                 <input type="text" class="form-control" id="Mağazanın/saytın adı"
                                     placeholder="Mağazanın/saytın adı">
-                            </div>
+                            </div> -->
                             <div class="form-group">
                                 <select class="custom-select">
                                     <option selected>Kateqoriya</option>
@@ -944,18 +1107,23 @@
                                     <option>Kateqoriya</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="Məhsulun adı" placeholder="Məhsulun adı">
+                            <div class="input-field col-12 p-0 ">
+                                <input id="Məhsulun adı" type="text" class="validate">
+                                <label for="Məhsulun adı">Məhsulun adı</label>
                             </div>
-                            <div class="input-group">
-                                <input type="text" class="form-control"style="border-right:none"
-                                    aria-label="Text input with segmented dropdown button" value="Invoys qiyməti">
-                                <div class="input-group-append"style="height: 37px;
-                                border: 1px solid #ced4da;
-                                border-left: none;">
+                            <!-- <div class="form-group">
+                                <input type="text" class="form-control" id="Məhsulun adı" placeholder="Məhsulun adı">
+                            </div> -->
+                            <div class="input-field d-flex">
+                                <input type="text" id="Invoys qiyməti"  class="validate" style="border-right:none;width:85%"
+                                    aria-label="Text input with segmented dropdown button" >
+                                    <label for="Invoys qiyməti">Invoys qiyməti</label>
+                                <div class="input-group-append"style="height: 48px;
+                                border: 1px solid #E7ECF2;
+                                border-left: none;width:15%">
                                     <button type="button" class="btn btn-outline-secondary tl" style="    height: 28px;
-                                    margin-top: 4px;
-                                    border-left: 1px solid #ced4da;">TL</button>
+                                    margin-top: 7px;
+                                    border-left: 1px solid #E7ECF2;color: #F16136;">TL</button>
                                     <button type="button" class="btn btn-outline-secondary arrow">
                                         <img src="style/mystyle/img/arroww.png">
                                     </button>
@@ -995,7 +1163,152 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="tenzimlemeler" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered d-flex" role="document">
+        <div class="modal-content qeydiyyat_modal">
+            <div class="modal-header" style="justify-content: center !important;margin-top: 6%;">
+                <h5 class="qeydiyyat_title">Tənzimləmələr</h5>
+                <img  data-toggle="modal" data-dismiss="modal" src="style/mystyle/img/back-white.png">
 
+            </div>
+            <div class="modal-body">
+                <form class="d-flex form_qeydiyyat ">
+                    <div class="row">
+                       
+                            <button class="cixis_qeydiyat" data-toggle="modal" data-dismiss="modal"></button>
+                            <div class="form-group col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Ad</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="Fend" dis>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Soyad</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="Nesirov" disabled>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Email</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="fendnesirov@gmail.com" disabled>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+
+                                <div class="d-flex" style="justify-content: space-between;">
+                                    <label for="message-text" class="col-form-label  qeydiyat_label">Doğum
+                                        tarixi</label> <img src="style/mystyle/img/teqvim.png"
+                                        style="width: 20px; height: 20px;    position: absolute;
+                                        left: 80%;
+                                        top: 50%;">
+                                </div>
+                                <input type="text" class="form-control qeydiyat_input ferqlii" id="recipient-name"
+                                    value="15.05.1990" disabled>
+
+
+
+                            </div>
+
+                       
+                        <div class="row">
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Telefon
+                                    nömrəsi</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="+994770000000" disabled>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Əlavə Telefon
+                                    nömrəsi</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="+994120000000" disabled>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Dil Seçimi</label>
+                                <select type="text" class="form-control qeydiyat_input ferqlii" id="recipient-name">
+                                    <option selected>Azərbaycan dili</option>
+                                    <option>AZ</option>
+                                    <option>EN</option>
+                                </select>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Şəhər</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="Baki" disabled>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <label for="message-text" class="col-form-label  qeydiyat_label">Qeydiyyatda olduğunuz
+                                ünvan</label>
+                            <input style="width: 100%;" type="text" class="form-control qeydiyat_input"
+                                id="recipient-name" value="Filan ünvan, filan küçə" disabled>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Sənədin
+                                    seriası</label>
+                                <select type="text" class="form-control qeydiyat_input" id="recipient-name">
+                                    <option>AZE</option>
+                                </select>
+                            </div>
+                            <div class="form-group  col-6  col-sm-9">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Sənədin
+                                    nömrəsi</label>
+                                <input type="text" class="form-control qeydiyat_input_col9" id="recipient-name"
+                                    value="7654321" disabled>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="form-group col-6">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Şəxsiyyət
+                                    Vəsiqəsinin FİN kodu</label>
+                                <input type="text" class="form-control qeydiyat_input_col6" id="recipient-name"
+                                    value="123NB12" disabled>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Cinsiyyət</label>
+                                <select type="text" class="form-control qeydiyat_input_col6 selectt ferqlii"
+                                    id="recipient-name">
+                                    <option selected>Kişi</option>
+                                    <option>Xanim</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex ">
+
+                            <div class="form-group col-6">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Referral customer
+                                    code</label>
+                                <input type="text" class="form-control qeydiyat_input_col6 ferqlii" id="recipient-name"
+                                    value="6CLBREXPRSS">
+                            </div>
+                            <div class="form-group col-6">
+                                <div class="d-flex " style="justify-content: space-between;">
+                                    <label for="message-text" class="col-form-label  qeydiyat_label">Şifrə</label>
+                                    <img src="style/mystyle/img/unvisible.png" style="    width: 16px;
+                                    height: 14px;
+                                    position: absolute;
+                                    left: 90%;
+                                    top: 50%;
+                                ">
+                                </div>
+                                <input type="password" class="form-control qeydiyat_input_col6 ferqlii" id="recipient-name"
+                                    value="12345">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+
+                <button type=" button" class=" qeydiyyat_btn" data-dismiss="modal">YADDA SAXLA</button>
+            </div>
+        </div>
+    </div>
+</div>
     <script src="./style/bootstrap/jquery/jquery-3.4.1.min.js"></script>
     <script src="./style/bootstrap/jquery/popper.min.js"></script>
     <script src="./style/slick/slick.min.js"></script>
@@ -1003,6 +1316,7 @@
     <script src="./style/font_awesome/js/all.min.js"></script>
     <script src="./style/mystyle/js/my_style.js"></script>
     <script src="./style/mystyle/js/nav.js"></script>
+    <script src="./style/materialize/js/materialize.js"></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>

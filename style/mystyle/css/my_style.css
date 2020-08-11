@@ -53,7 +53,7 @@ textarea{
 
     .scrollll table td,
     .scrollll table th {
-        padding: .75rem 0 !important;
+        padding: .3rem 0 !important;
     }
 
 
@@ -135,7 +135,13 @@ input[type=radio] {
 }
 .info_baglama .modal-header{
     border-bottom: 1px solid #E7ECF2 !important;
-    height: 40px !important;
+    height: 50px !important;
+}
+.info_baglama input{
+    border: none !important;
+}
+#table_siyahi .tbody_table{
+    margin-top: 0 !important;
 }
 .infobaglama_tbody tr{
 width: 100%;
@@ -189,10 +195,16 @@ width: 100%;
 
     background: #ffffff;
 }
+#qeydd{
+    display: none !important;
+}
+#qeydd:focus{
+    display: none !important;
+}
 .qeydiyyat_modal .modal-header img{
-    position: absolute;
-    left: 4%;
-    top: 11%;
+    position: absolute !important;
+    left: 4% !important;
+    top: 11% !important;
 }
 
 .table_baglama table span {
@@ -206,24 +218,26 @@ width: 100%;
 
     /* Main color */
 
-    color: #57606F;
+    color: #57606F ;
 }
+.ferqlii{
+    color: #FFFFFF !important;
+    height: 48px;
+    }
 .form_qeydiyyat input,.form_qeydiyyat select{
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
+    font-family: Kanit !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    display: flex !important;
+    align-items: center !important;
     /* color: #FFFFFF; */
-    color: #8F9F97;
+    color: #8F9F97 ;
     border-radius: 0 !important;
     padding: 0 !important;
 }
-.ferqlii{
-color: #FFFFFF !important;
-}
+
 
 .social-networks_list--facebook a img:hover{
     content: url(../img/fb-hover.png);
@@ -774,7 +788,7 @@ textarea {
 }
 
 .img-plus img {
-    padding-bottom: 17px;
+    padding-bottom: 12px;
 }
 
 .mytxtcolor {
@@ -793,6 +807,17 @@ textarea {
     /* White */
     color: #FFFFFF;
 
+}
+.money span{
+    font-family: Kanittt;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+/* White */
+
+color: #FFFFFF;
 }
 
 .sexsi_kabinet_news {
@@ -1462,18 +1487,18 @@ table::-webkit-scrollbar-thumb:hover {
     border-radius: 4px;
 }
 
-.table {
+/* .table {
     width: 97% !important;
 }
-
+ */
 
 
 
 
 
 #table_siyahi {
-    margin-top: 40px;
-    height: 490px;
+    margin-top: 30px;
+    height: 72%;
     width: 400px;
     padding-left: 15px;
     border-radius: 25px;
@@ -1826,7 +1851,7 @@ table::-webkit-scrollbar-thumb:hover {
 
 .kuryersifarisi_secim {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
     padding-left: 15px;
 }
 
@@ -2135,6 +2160,7 @@ box-sizing: border-box;
 }
 
 .kuryersifariset_btn {
+    float: right;
     outline: none;
     border: none;
     margin: 23px 15px;
@@ -2297,7 +2323,7 @@ box-sizing: border-box;
 .formsifariset button {
     width: 145px;
     height: 40px;
-    margin-top: 20px;
+    margin-bottom:5px;
     background: #20BF6B;
     border-radius: 4px;
     font-family: Kanit !important;
@@ -2343,7 +2369,12 @@ box-sizing: border-box;
 
     color: #F16136 !important;
 }
-
+.sifaris_odeniset:hover{
+background-color: #e94c1d !important ;
+}
+.table-hover tbody tr:hover {
+    background-color: transparent !important;
+}
 .sifaris_odeniset {
     width: 112px !important;
     height: 40px !important;
@@ -2369,14 +2400,14 @@ box-sizing: border-box;
 .qeydiyat_label,
 .qeydiyat_input[value] .qeydiyat_input_col6[value],
 .qeydiyat_input_col9[value] {
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.2px;
+    font-family: Kanit !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    letter-spacing: 0.2px !important;
 
     color: #8F9F97;
 }
@@ -2410,11 +2441,8 @@ box-sizing: border-box;
 
     color: #FFFFFF;
 }
-
-
 .qeydiyyat_modal {
     width: 860px;
-    height: 705px;
     margin: auto;
     /* footer */
 
@@ -2442,20 +2470,20 @@ select option {
 
 
 .qeydiyat_infor {
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    width: 588px;
-    height: 12px;
-    font-family: Kanit;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
+    margin: auto !important;
+    margin-bottom: 20px !important;
+    margin-top: 40px !important;
+    width: 588px !important;
+    height: 12px !important;
+    font-family: Kanit !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    display: flex !important;
+    align-items: center !important;
 
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 
 }
 
@@ -2499,24 +2527,24 @@ select option {
 }
 
 .qeydiyat_input {
-    width: 192px;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid #FFFFFF;
+    width: 192px !important;
+    border: none !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid #FFFFFF !important;
 }
 
 .qeydiyat_input_col6 {
-    width: 394px;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid #FFFFFF;
+    width: 394px !important;
+    border: none !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid #FFFFFF !important;
 }
 
 .qeydiyat_input_col9 {
-    width: 596px;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid #FFFFFF;
+    width: 596px !important;
+    border: none !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid #FFFFFF !important;
 }
 
 .modal-header {
@@ -2556,11 +2584,11 @@ select option {
 
 .bos_span {
     position: absolute;
-    font-family: San Francisco;
+    font-family: Kanit;
     font-style: normal;
     text-align: center;
     font-weight: normal;
-    padding: 3px 0px 0 0;
+    padding: 2px 0px 0 0;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
@@ -2589,12 +2617,12 @@ select option {
 }
 
 .progress_last_number {
-    font-family: San Francisco;
+    font-family: Kanit;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    padding: 3px 6px 0 0;
+    padding: 2px 5px 0 0;
     color: #FFFFFF;
     position: absolute;
     right: 0px;
@@ -2649,6 +2677,7 @@ select option {
 }
 .tab-content{
     padding-left: 15px;
+    padding-right: 15px;
 }
 #tab1 {
     background-image: url(../img/Istanbul1.png);
@@ -2912,9 +2941,9 @@ background: #F16136;
 thead{
     border-radius: 8px 8px 0px 0px;
 }
-.modal-header {
+/* .modal-header {
     padding: 0;
-}
+} */
 
 .modal-title {
     margin: auto;
@@ -2938,6 +2967,42 @@ thead{
     background-position: right .7em top 50%, 0 0;
     /* icon size, then gradient */
     background-size: 1.40em auto, 100%;
+    border: 1px solid #E7ECF2;
+    font-family: Kanit;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 0.2px;
+
+/* Second color */
+
+color: #555D69;
+
+}
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: none;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled):active{
+    color: #F16136;
+    background-color: #ffffff;
+    border: none;
+    border-left: 1px solid #E7ECF2;
+}
+.btn-outline-secondary.focus, .btn-outline-secondary:focus {
+    box-shadow: none;
+}
+.btn-outline-secondary:hover {
+    color: #F16136;
+    background-color: #ffffff;
+    border: none;
+    border-left: 1px solid #E7ECF2;
+}
+.custom-select:focus{
+    border: 1px solid #E7ECF2 !important;
+    box-shadow: none;
+}
+.input-group-append{
 
 }
 
@@ -2973,4 +3038,259 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+.footerr {
+    background: url("../img/pattern.png");
+    background-color: #223F2E;
+    color: white !important;
+}
+
+.footerr input::placeholder,
+.footerr textarea::placeholder {
+    font-family: "Kanit-2" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.heading {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+#exampleFormControlTextarea1 {
+    resize: none;
+}
+
+.send-message {
+    position: absolute;
+    bottom: 35px;
+    right: 28px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: transparent;
+    color: white;
+    width: 88px;
+    height: 23.83px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.heading-line {
+    width: 54px;
+    height: 2px;
+    margin: 2px 0;
+    border: 0 !important;
+    background: #FFFFFF;
+}
+
+.contact-info span {
+    margin: 0 10px;
+}
+
+.condition {
+    background-color: transparent;
+    color: white;
+    border: 0;
+    border-right: 2px solid;
+    padding: 5px 18px 5px 5px;
+    cursor: pointer;
+}
+
+.rules {
+    background-color: transparent;
+    color: white;
+    border: 0;
+    padding: 18px;
+    cursor: pointer;
+}
+
+.up {
+    align-items: center;
+}
+
+.up-line {
+    width: 100%;
+    margin: 0;
+}
+
+.up-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 48px;
+    background-color: #374C3F;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: auto;
+
+}
+
+@media only screen and (min-device-width: 100px) and (max-device-width: 1024px) {
+    .footer-info {
+        display: none !important;
+    }
+
+    .footer-info-mobile {
+        display: flex !important;
+
+    }
+
+    .contain {
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .footerr {
+        margin-top: 0 !important;
+    }
+
+    .footer-bottom {
+        display: none !important;
+
+    }
+
+    .footer-bottom-mobile {
+        display: flex !important;
+        height: 105px;
+    }
+
+    .condition {
+        padding: 4px 10px 11px 0;
+    }
+
+    .rules {
+        padding: 10px 0 17px 10px;
+    }
+}
+.foot_hr {
+    width: 100%;
+    height: 1px;
+    background: #FFFFFF;
+    opacity: 0.08;
+    position: relative;
+}
+.description p {
+    width: 95%;
+    height: 94px;
+    font-family: Kanit-2 !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    /* display: flex; */
+    align-items: center;
+
+    /* White */
+
+    color: #FFFFFF;
+}
+
+
+.contact-heading {
+    width: 118px;
+    height: 12px;
+    font-family: Kanit-2;
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.contact-info p {
+    width: 410px;
+    height: 10px;
+    font-family: Kanit-2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 45px;
+
+
+    color: #FFFFFF;
+}
+
+.footer_form textarea {
+    border: none;
+}
+
+.footer_form input {
+    width: 197px !important;
+    height: 32px !important;
+    border: none !important;
+    background: rgba(255, 255, 255, .16) !important;
+    border-radius: 2px !important;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+
+    color: #FFFFFF !important;
+
+}
+.footerr .form-group{
+    margin-bottom: 0 !important;
+}
+
+#message {
+    position: relative;
+    background: rgba(255, 255, 255, .16) !important;
+    resize: none;
+    color: #FFFFFF !important;
+}
+
+#message::placeholder {
+    font-family: San Francisco;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF !important;
+}
+
+.footer_form {
+    margin-top: 27px;
+    margin-bottom: 25px;
+}
+
+.footer_form input::placeholder {
+    font-family: San Francisco;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF !important;
+}
+
+.condition,
+.rules {
+    font-family: Kanit;
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 14px;
+    line-height: 17px;
+
+    /* White */
+
+    color: #FFFFFF;
 }
