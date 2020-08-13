@@ -31,12 +31,15 @@
         .show {
             display: flex !important;
         } */
+      
+}
+
     </style>
 </head>
 
 <body>
     <div id="overlay"></div>
-    <div class="containernav d-flex">
+    <div class="containernav d-flex sticky-top  elave">
 
 
         <nav id="nvbr" class="navbar w-100 navbar-expand-lg navbar-light  pt-0">
@@ -276,12 +279,12 @@
                             <div class="progress">
                                 <span class="bos_span">
                                     <span style="position: absolute;left: 5px">0</span>
-                                    <span style="position: relative;left:70px">622</span></span>
+                                    <span style="position: relative;left:60px">622</span></span>
                                 <img src="style/mystyle/img/progress_bar.png" alt="">
                                 <span class="progress_last_number"> 1000</span>
                             </div>
                         </div>
-                        <a class="etrafli_link" href="baglamalarim.html">Ətraflı</a>
+                        <a class="etrafli_link" href="etrafli.html">Ətraflı</a>
                     </div>
                 </nav>
             </div>
@@ -290,7 +293,7 @@
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6  xariciunvan_main">
                         <h3 class="xariciunvan_title">XARİCİ ÜNVANLARIM</h3>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex pr-0  btns justify-content-end ">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex pl-0 btns justify-content-end ">
                         <button type="button" class="xariciunvan_btn " data-toggle="modal"
                             data-target="#beyanet_xariciunvan">BƏYAN ET</button>
                         <a href="sifariset.html" class="xariciunvan_btn ">SİFARİŞ ET</a>
@@ -1118,10 +1121,14 @@
                                 <input type="text" id="Invoys qiyməti"  class="validate" style="border-right:none;width:85%"
                                     aria-label="Text input with segmented dropdown button" >
                                     <label for="Invoys qiyməti">Invoys qiyməti</label>
-                                <div class="input-group-append"style="height: 48px;
-                                border: 1px solid #E7ECF2;
-                                border-left: none;width:15%">
-                                    <button type="button" class="btn btn-outline-secondary tl" style="    height: 28px;
+                            
+                                 <div class="select-country">
+                                    <select class="select-css">
+                                        <option>TL</option>
+                                        <option>TL</option>
+                                    </select>
+                                </div>
+                                    <!-- <button type="button" class="btn btn-outline-secondary tl" style="    height: 28px;
                                     margin-top: 7px;
                                     border-left: 1px solid #E7ECF2;color: #F16136;">TL</button>
                                     <button type="button" class="btn btn-outline-secondary arrow">
@@ -1133,7 +1140,7 @@
                                         <a class="dropdown-item" href="#">Something else here</a>
                                         <div role="separator" class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">Separated link</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="form-group">

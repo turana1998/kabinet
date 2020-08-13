@@ -8,6 +8,12 @@
     font-family: Kanit;
    
 }
+.containernav{
+    /* position: fixed;
+    background-color: #ffffff;
+    top: 0; */
+   
+}
 button {
     outline: none;
 }
@@ -69,6 +75,7 @@ input[type=radio] {
         box-sizing: border-box;
      }
      .file-input > [type='file'] {
+     
    position: absolute;
    top: 0;
    left: 0;
@@ -90,6 +97,7 @@ input[type=radio] {
  }
 .file-input{
     border: 1px solid #E7ECF2;
+    border-radius: 4px;
     
 }
 .scrollll {
@@ -283,12 +291,13 @@ width: 100%;
 } */
 
 .user_id p {
-    width: 72px;
-    height: 8px;
+    height: 1px;
+    /* margin-bottom: 21px; */
+    margin-top: 3px;
     font-family: Kanit !important;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 18px;
 
 
@@ -534,7 +543,6 @@ width: 100%;
 }
 
 .logo-mobile {
-    height: 96px !important;
     align-items: center;
 }
 
@@ -625,7 +633,9 @@ hr {
 
     color: #57606F !important;
 }
-
+.nav-link:hover{
+    color: #F16136 !important;
+}
 /* 
 .menu-bottom {
     display: flex;
@@ -771,7 +781,10 @@ textarea {
     position: relative;
 }
 #balans .id{
-    width: 2% !important;
+    width: 4% !important;
+    padding-left: 0;
+    padding-right: 22px;
+
 }
 .img-plus {
     position: absolute;
@@ -1186,7 +1199,7 @@ color: #FFFFFF;
     border-radius: 4px;
     text-align: center;
     padding-top: 5px;
-    box-shadow: 1px 1px 5px #F16136, -0.5px -0.5px 10px #F16136;
+    box-shadow: 1px 1px 5px #F16136, -0.5px -0.5px 1px #F16136;
     transition: 1s;
 }
 
@@ -1241,7 +1254,7 @@ color: #FFFFFF;
 .xariciunvan_inform {
     max-width: 100%;
     /* margin: auto; */
-    margin-top: 40px;
+    margin-top: 30px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -1274,8 +1287,11 @@ color: #FFFFFF;
 }
 
 .footer {
-    margin-top: 5px;
+    margin-top: 20px;
     width: 100%;
+}
+.footer .row{
+    padding-right: 5px !important;
 }
 .btn-outline-secondary{
     /* border:1px solid #ced4da !important */
@@ -1293,7 +1309,7 @@ color: #FFFFFF;
 }
 
 .footer .cols {
-    padding-left: 13px;
+    padding-left: 12px;
 }
 
 .footer .cols:first-child {}
@@ -1514,7 +1530,7 @@ table::-webkit-scrollbar-thumb:hover {
 
 .tablescrool {
 
-    height: 300px;
+    height: 306px;
     margin-top: 20px;
     border-radius: 25px;
 }
@@ -1999,9 +2015,23 @@ box-sizing: border-box;
 .balansdaxilet {
     width: 85%;
     margin-top: 20px;
-    border-bottom: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4 !important;
 }
-
+.balansdaxilet input{
+    border: none !important;
+}
+.elave {
+    position: fixed;
+}
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+.containernav{
+    background-color: #FFFFFF;
+}
 .balansdaxilet span {
     width: 22px;
     height: 22px;
@@ -2071,7 +2101,7 @@ box-sizing: border-box;
 }
 
 .kuryer_form {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .kuryer_form input::placeholder {
@@ -2158,7 +2188,12 @@ box-sizing: border-box;
 
     color: #57606F;
 }
-
+.kuryersifariset_btn:hover{
+    background-color: #e94c1d;
+}
+.sifaris_odeniset:hover{
+    background-color: #e94c1d;
+}
 .kuryersifariset_btn {
     float: right;
     outline: none;
@@ -2324,6 +2359,7 @@ box-sizing: border-box;
     width: 145px;
     height: 40px;
     margin-bottom:5px;
+    margin-top: 15px;
     background: #20BF6B;
     border-radius: 4px;
     font-family: Kanit !important;
@@ -2345,6 +2381,7 @@ box-sizing: border-box;
      background: #1c834c;
 }
 .toplam_qiymet {
+ 
     width: 200px !important;
     height: 40px;
     /* White */
@@ -2733,6 +2770,10 @@ select option {
     max-height: 410px !important;
     overflow-y: scroll;
 }
+#table_siyahi th,
+#table_siyahi td{
+    padding: .4rem !important;
+}
 
 table tbody {
     display: block;
@@ -2957,6 +2998,10 @@ thead{
     /* margin-left: 20px; */
     padding: 0;
 
+}
+.close img{
+    width: 20px;
+    height: 20px;
 }
 
 .xarici_unvanlar_beyan_modal .custom-select {

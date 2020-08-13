@@ -335,8 +335,56 @@ textarea.materialize-textarea:focus:not([readonly]) {
   border: 1px solid #F16136;
   /* border-top : none; */
 }
+.contact_form input[type=text]:not(.browser-default),
+.contact_form input[type=tel]:not(.browser-default),
+.contact_form input[type=email]:not(.browser-default)
+{
+  border: none;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;;
+  background-color: transparent;
+  height: 40px !important;
+  /* Color */
+  box-sizing: border-box;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+.contact_form.input-field>label{
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 
+  /* White */
+  
+  color: #FFFFFF;
 
+}
+.contact_form input:not([type]):focus:not([readonly])+label,
+.contact_form input[type=text]:not(.browser-default):focus:not([readonly])+label,
+.contact_form input[type=password]:not(.browser-default):focus:not([readonly])+label,
+.contact_form input[type=email]:not(.browser-default):focus:not([readonly])+label,
+.contact_form input[type=url]:not(.browser-default):focus:not([readonly])+label,
+.contact_form input[type=time]:not(.browser-default):focus:not([readonly])+label,
+.contact_form input[type=date]:not(.browser-default):focus:not([readonly])+label,
+.contact_form input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+.contact_form input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+.contact_form input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+.contact_formt input[type=number]:not(.browser-default):focus:not([readonly])+label,
+.contact_form input[type=search]:not(.browser-default):focus:not([readonly])+label,
+.contact_formt textarea.materialize-textarea:focus:not([readonly])+label {
+
+  top: 7px;
+  background-color: transparent !important;
+  width:auto;
+  padding: 0 0px;
+  
+}
 input:not([type]):focus:not([readonly])+label,
 input[type=text]:not(.browser-default):focus:not([readonly])+label,
 input[type=password]:not(.browser-default):focus:not([readonly])+label,
@@ -354,6 +402,8 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   top: 7px;
   background-color: white;
   width:auto;
+
+  border-radius: 8px !important;
   padding: 0 10px;
 }
 

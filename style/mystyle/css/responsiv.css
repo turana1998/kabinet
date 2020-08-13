@@ -140,6 +140,9 @@
 
 
 @media (max-width: 768px) {
+    .navbar{
+        height: 78px;
+    }
     .qeydiyyat_modal .modal-header img {
         position: absolute !important;
         left: 4% !important;
@@ -313,11 +316,19 @@
         height: auto;
         max-height: 100% !important;
     }
-.tbody_table{
+/* .tbody_table{
     margin-top: 40px;
 }
-    .table_baglama {
+   */ 
+   .table_baglama {
         height: 100%;
+    }
+    .sifaris_redakte_modal tbody{
+        margin-top: 38px;
+    }
+    .sifaris_redakte_header h5{
+        font-size: 16px !important;
+        margin-left: 0;
     }
 
     .sifaris_redakte tr {
@@ -477,6 +488,12 @@
     .formsifariset {
         width: 100% !important;
     }
+    .formsifariset button{
+        width: 124px;
+    }
+    .balansdaxilet{
+        width: 100%;
+    }
     #qeyddd{
         display: none !important;
     }
@@ -548,6 +565,10 @@
 }
 
 @media (min-width: 768px) {
+    .footerr{
+        margin-top: 40px !important;
+
+    }
     .tables-mobile {
         display: none;
     }
@@ -575,7 +596,7 @@
     }
     .table thead th {
         vertical-align: middle !important;
-        border-bottom: 1px solid #dee2e6;
+        border-bottom: 1px solid #E7ECF2;;
     }
     .odenilecek_mebleg {
         width: 20% !important;
@@ -663,7 +684,7 @@
     }
 
     .ferqli {
-        width: 163px !important;
+        width: 172px !important;
     }
 
     .xariciunvan_btn {
@@ -922,7 +943,7 @@
     .olke,
     .turkiye {
         margin-top: 20px;
-        width: 85%;
+        width: 90%;
         display: flex;
         justify-content: center;
         padding-top: 5px;

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Şəxsi Kabinet</title>
     <link rel="stylesheet" href="./style/font_awesome/css/all.min.css">
+    <link rel="stylesheet" href="./style/materialize/css/materializee.css">
     <link rel="stylesheet" href="./style/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/mystyle/css/my_style.css">
     <link rel="stylesheet" href="./style/mystyle/css/responsiv.css">
@@ -21,7 +22,7 @@
 
 <body>
     <div id="overlay"></div>
-    <div class="containernav d-flex">
+    <div class="containernav d-flex sticky-top  elave">
 
 
         <nav id="nvbr" class="navbar w-100 navbar-expand-lg navbar-light  pt-0">
@@ -335,7 +336,7 @@
                                           </label>
                                     </div>
                                 </div>
-                                <div class="custom-control custom-radio mt-4 d-flex" style="flex-direction: row;
+                                <div class="custom-control custom-radio mt-3 d-flex" style="flex-direction: row;
                 justify-content: space-between;padding-left: 0 !important;width: 80%;">
                                     <div>
                                         <img src="style/mystyle/img/VarlНk 2 1.png">
@@ -351,7 +352,7 @@
                                     </div>
 
                                 </div>
-                                <div class="custom-control custom-radio mt-4 d-flex" style="flex-direction: row;
+                                <div class="custom-control custom-radio mt-3 d-flex" style="flex-direction: row;
             justify-content: space-between;padding-left: 0 !important;width: 80%;">
                                     <div>
                                         <img src="style/mystyle/img/VarlНk 3 1.png">
@@ -385,7 +386,7 @@
                                           </label>
                                     </div>
                                 </div>
-                                <div class="custom-control custom-radio mt-4 d-flex" style="flex-direction: row;
+                                <div class="custom-control custom-radio mt-3 d-flex" style="flex-direction: row;
     justify-content: space-between;padding-left: 0 !important;">
                                     <div>
                                         <img src="style/mystyle/img/VarlНk 2 1.png">
@@ -401,7 +402,7 @@
                                     </div>
 
                                 </div>
-                                <div class="custom-control custom-radio mt-4 d-flex" style="flex-direction: row;
+                                <div class="custom-control custom-radio mt-3 d-flex" style="flex-direction: row;
 justify-content: space-between;padding-left: 0 !important;">
                                     <div>
                                         <img src="style/mystyle/img/VarlНk 3 1.png">
@@ -424,7 +425,7 @@ justify-content: space-between;padding-left: 0 !important;">
                                 <div class="baglamalarisecin pl-3 mt-3">
                                     <div class="d-flex" style="justify-content: space-between;">
                                         <button class="baglamalarisecin_btn mt-3">Bağlamaları seçin</button>
-                                        <div class="custom-control custom-radio custom-control-inline mt-4 ">
+                                        <div class="custom-control custom-radio custom-control-inline mt-3 ">
                                             <label class="containerr" >
                                                 <input type="radio" name="radio" style="position: absolute;
                                                 opacity: 0;
@@ -649,80 +650,247 @@ justify-content: space-between;width: 93%;">
 
     </div>
     <div class="modal fade" id="beyanet_xariciunvan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content xarici_unvanlar_beyan">
-            <div class="modal-header xarici_unvanlar_beyan_header">
-                <h5 class="modal-title" id="exampleModalLabel">ÖNCƏDƏN BƏYAN ET</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="style/mystyle/img/modal-none.png" style="color: #FFFFFF;">
-                </button>
-            </div>
-            <div class="modal-body xarici_unvanlar_beyan_modal">
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="Tracking ID" placeholder="Tracking ID">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="Mağazanın/saytın adı"
-                                placeholder="Mağazanın/saytın adı">
-                        </div>
-                        <div class="form-group">
-                            <select class="custom-select">
-                                <option selected>Kateqoriya</option>
-                                <option>Kateqoriya</option>
-                                <option>Kateqoriya</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="Məhsulun adı" placeholder="Məhsulun adı">
-                        </div>
-                        <div class="input-group">
-                            <input type="text" class="form-control"
-                                aria-label="Text input with segmented dropdown button" value="Invoys qiyməti">
-                            <div class="input-group-append">
-                                <button type="button" class="btn btn-outline-secondary tl">TL</button>
-                                <button type="button" class="btn btn-outline-secondary arrow">
-                                    <img src="style/mystyle/img/arroww.png">
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    <div role="separator" class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Separated link</a>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content xarici_unvanlar_beyan">
+                <div class="modal-header xarici_unvanlar_beyan_header">
+                    <h5 class="modal-title" id="exampleModalLabel">ÖNCƏDƏN BƏYAN ET</h5>
+                    <button type="button" class="close mt-0" data-dismiss="modal" aria-label="Close">
+                        <img src="style/mystyle/img/modal-none.png" style="color: #FFFFFF;">
+                    </button>
+                </div>
+                <div class="modal-body xarici_unvanlar_beyan_modal">
+                    <div class="modal-body">
+                        <form>
+                            <div class="input-field col-12 p-0 ">
+                                <input id="Tracking ID" type="text" class="validate">
+                                <label for="Tracking ID">Tracking ID</label>
+                            </div>
+                            <!-- <div class="form-group">
+                                <input type="text" class="form-control" id="Tracking ID" placeholder="Tracking ID">
+                            </div> -->
+                            <div class="input-field col-12 p-0 ">
+                                <input id="Mağazanın/saytın adı" type="text" class="validate">
+                                <label for="Mağazanın/saytın adı">Mağazanın/saytın adı</label>
+                            </div>
+                            <!-- <div class="form-group">
+                                <input type="text" class="form-control" id="Mağazanın/saytın adı"
+                                    placeholder="Mağazanın/saytın adı">
+                            </div> -->
+                            <div class="form-group">
+                                <select class="custom-select">
+                                    <option selected>Kateqoriya</option>
+                                    <option>Kateqoriya</option>
+                                    <option>Kateqoriya</option>
+                                </select>
+                            </div>
+                            <div class="input-field col-12 p-0 ">
+                                <input id="Məhsulun adı" type="text" class="validate">
+                                <label for="Məhsulun adı">Məhsulun adı</label>
+                            </div>
+                            <!-- <div class="form-group">
+                                <input type="text" class="form-control" id="Məhsulun adı" placeholder="Məhsulun adı">
+                            </div> -->
+                            <div class="input-field d-flex">
+                                <input type="text" id="Invoys qiyməti"  class="validate" style="border-right:none;width:85%"
+                                    aria-label="Text input with segmented dropdown button" >
+                                    <label for="Invoys qiyməti">Invoys qiyməti</label>
+                            
+                                 <div class="select-country">
+                                    <select class="select-css">
+                                        <option>TL</option>
+                                        <option>TL</option>
+                                    </select>
+                                </div>
+                                    <!-- <button type="button" class="btn btn-outline-secondary tl" style="    height: 28px;
+                                    margin-top: 7px;
+                                    border-left: 1px solid #E7ECF2;color: #F16136;">TL</button>
+                                    <button type="button" class="btn btn-outline-secondary arrow">
+                                        <img src="style/mystyle/img/arroww.png">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div role="separator" class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div> -->
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">İnvoys fayl:</label>
-                            <div class="input-group mb-3">
-
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">İnvoys fayl:</label>
                                 <div class="input-group mb-3">
 
-                                    <div class='file-input w-100'>
-                                        <input type='file'>
-                                        <span class='button'>Choose File</span>
-                                        
-                                      </div>
+                                    <div class="input-group mb-3">
+
+                                        <div class='file-input w-100'>
+                                            <input type='file'>
+                                            <span class='button'>Choose File</span>
+                                            
+                                          </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Əlavə qeyd:</label>
-                            <textarea class="form-control" id="message-text" rows="5"></textarea>
-                        </div>
-                        <button class="xarici_unvanlar_beyan_btn" type="button" class="">YADDA SAXLA</button>
-                    </form>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Əlavə qeyd:</label>
+                                <textarea class="form-control" id="message-text" rows="5"></textarea>
+                            </div>
+                            <button class="xarici_unvanlar_beyan_btn" type="button" class="">YADDA SAXLA</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
 
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="tenzimlemeler" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered d-flex" role="document">
+        <div class="modal-content qeydiyyat_modal">
+            <div class="modal-header" style="justify-content: center !important;margin-top: 6%;">
+                <h5 class="qeydiyyat_title">Tənzimləmələr</h5>
+                <img  data-toggle="modal" data-dismiss="modal" src="style/mystyle/img/back-white.png">
+
+            </div>
+            <div class="modal-body">
+                <form class="d-flex form_qeydiyyat ">
+                    <div class="row">
+                       
+                            <button class="cixis_qeydiyat" data-toggle="modal" data-dismiss="modal"></button>
+                            <div class="form-group col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Ad</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="Fend" dis>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Soyad</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="Nesirov" disabled>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Email</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="fendnesirov@gmail.com" disabled>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+
+                                <div class="d-flex" style="justify-content: space-between;">
+                                    <label for="message-text" class="col-form-label  qeydiyat_label">Doğum
+                                        tarixi</label> <img src="style/mystyle/img/teqvim.png"
+                                        style="width: 20px; height: 20px;    position: absolute;
+                                        left: 80%;
+                                        top: 50%;">
+                                </div>
+                                <input type="text" class="form-control qeydiyat_input ferqlii" id="recipient-name"
+                                    value="15.05.1990" disabled>
+
+
+
+                            </div>
+
+                       
+                        <div class="row">
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Telefon
+                                    nömrəsi</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="+994770000000" disabled>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Əlavə Telefon
+                                    nömrəsi</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="+994120000000" disabled>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Dil Seçimi</label>
+                                <select type="text" class="form-control qeydiyat_input ferqlii" id="recipient-name">
+                                    <option selected>Azərbaycan dili</option>
+                                    <option>AZ</option>
+                                    <option>EN</option>
+                                </select>
+                            </div>
+                            <div class="form-group  col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Şəhər</label>
+                                <input type="text" class="form-control qeydiyat_input" id="recipient-name"
+                                    value="Baki" disabled>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <label for="message-text" class="col-form-label  qeydiyat_label">Qeydiyyatda olduğunuz
+                                ünvan</label>
+                            <input style="width: 100%;" type="text" class="form-control qeydiyat_input"
+                                id="recipient-name" value="Filan ünvan, filan küçə" disabled>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-6  col-sm-3">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Sənədin
+                                    seriası</label>
+                                <select type="text" class="form-control qeydiyat_input" id="recipient-name">
+                                    <option>AZE</option>
+                                </select>
+                            </div>
+                            <div class="form-group  col-6  col-sm-9">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Sənədin
+                                    nömrəsi</label>
+                                <input type="text" class="form-control qeydiyat_input_col9" id="recipient-name"
+                                    value="7654321" disabled>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="form-group col-6">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Şəxsiyyət
+                                    Vəsiqəsinin FİN kodu</label>
+                                <input type="text" class="form-control qeydiyat_input_col6" id="recipient-name"
+                                    value="123NB12" disabled>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Cinsiyyət</label>
+                                <select type="text" class="form-control qeydiyat_input_col6 selectt ferqlii"
+                                    id="recipient-name">
+                                    <option selected>Kişi</option>
+                                    <option>Xanim</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex ">
+
+                            <div class="form-group col-6">
+                                <label for="message-text" class="col-form-label  qeydiyat_label">Referral customer
+                                    code</label>
+                                <input type="text" class="form-control qeydiyat_input_col6 ferqlii" id="recipient-name"
+                                    value="6CLBREXPRSS">
+                            </div>
+                            <div class="form-group col-6">
+                                <div class="d-flex " style="justify-content: space-between;">
+                                    <label for="message-text" class="col-form-label  qeydiyat_label">Şifrə</label>
+                                    <img src="style/mystyle/img/unvisible.png" style="    width: 16px;
+                                    height: 14px;
+                                    position: absolute;
+                                    left: 90%;
+                                    top: 50%;
+                                ">
+                                </div>
+                                <input type="password" class="form-control qeydiyat_input_col6 ferqlii" id="recipient-name"
+                                    value="12345">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+
+                <button type=" button" class=" qeydiyyat_btn" data-dismiss="modal">YADDA SAXLA</button>
+            </div>
         </div>
     </div>
 </div>
-
+<script src="./style/materialize/js/materialize.js"></script>
     <script src="./style/bootstrap/jquery/jquery-3.4.1.min.js"></script>
     <script src="./style/bootstrap/jquery/popper.min.js"></script>
     <script src="./style/slick/slick.min.js"></script>
